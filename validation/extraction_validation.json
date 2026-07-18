@@ -1,0 +1,1978 @@
+[
+  {
+    "path": "sub-anm101105/sub-anm101105_ses-20100619_behavior+icephys.nwb",
+    "n_events": 1079,
+    "nwb_subject_id": "anm101105",
+    "table_subject_id": "anm101105",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 675.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 675.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 676,
+        "old_total": 676
+      },
+      "post_10": {
+        "n_different": 4,
+        "max_absolute_difference": 1,
+        "new_total": 171,
+        "old_total": 175
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 586,
+        "old_total": 586
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 697,
+        "old_total": 697
+      }
+    },
+    "raw_nwb_sha256": "eeca9b24f391775ee1997aa2c0b780db72216482d2afd33ded8b57e5cd628bb5"
+  },
+  {
+    "path": "sub-anm101105/sub-anm101105_ses-20100620_behavior+icephys.nwb",
+    "n_events": 1167,
+    "nwb_subject_id": "anm101105",
+    "table_subject_id": "anm101105",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 632.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 632.00",
+    "max_behavior_alignment_error_s": 1.1368683772161603e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 1282,
+        "old_total": 1282
+      },
+      "post_10": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 277,
+        "old_total": 278
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 821,
+        "old_total": 821
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 1270,
+        "old_total": 1270
+      }
+    },
+    "raw_nwb_sha256": "861683d2df70f44ec50ea19b5d26d0985723478400ff684eac67637e3e2c2255"
+  },
+  {
+    "path": "sub-anm101105/sub-anm101105_ses-20100621_behavior+icephys.nwb",
+    "n_events": 1096,
+    "nwb_subject_id": "anm101105",
+    "table_subject_id": "anm101105",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 627.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 627.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 4,
+        "max_absolute_difference": 1,
+        "new_total": 3828,
+        "old_total": 3824
+      },
+      "post_10": {
+        "n_different": 16,
+        "max_absolute_difference": 1,
+        "new_total": 897,
+        "old_total": 911
+      },
+      "post_30": {
+        "n_different": 7,
+        "max_absolute_difference": 1,
+        "new_total": 3766,
+        "old_total": 3773
+      },
+      "post_50": {
+        "n_different": 4,
+        "max_absolute_difference": 1,
+        "new_total": 6146,
+        "old_total": 6150
+      }
+    },
+    "raw_nwb_sha256": "9934aee76b4929c5ea7cafdb5ae93848033635c8928028ed28bfc309b69e1baa"
+  },
+  {
+    "path": "sub-anm106211/sub-anm106211_ses-20100925_behavior+icephys.nwb",
+    "n_events": 1429,
+    "nwb_subject_id": "anm106211",
+    "table_subject_id": "anm106211",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 528.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 528.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 712,
+        "old_total": 711
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 112,
+        "old_total": 114
+      },
+      "post_30": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 570,
+        "old_total": 572
+      },
+      "post_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 981,
+        "old_total": 982
+      }
+    },
+    "raw_nwb_sha256": "fe7ac132d5bcbb98ec351d057e261b84c1f44dd8212c87fe5a2d2a7118e79ed1"
+  },
+  {
+    "path": "sub-anm106213/sub-anm106213_ses-20100822_behavior+icephys.nwb",
+    "n_events": 760,
+    "nwb_subject_id": "anm106213",
+    "table_subject_id": "anm106213",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 637.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 637.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 426,
+        "old_total": 426
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 92,
+        "old_total": 94
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 285,
+        "old_total": 285
+      },
+      "post_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 466,
+        "old_total": 467
+      }
+    },
+    "raw_nwb_sha256": "caff080559512a94953d64bf22d2c3dcc0a3a405668fc1b3bcdc0f9798288b1d"
+  },
+  {
+    "path": "sub-anm106213/sub-anm106213_ses-20101214_behavior+icephys.nwb",
+    "n_events": 800,
+    "nwb_subject_id": "anm106213",
+    "table_subject_id": "anm106213",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 683.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 683.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 22,
+        "old_total": 22
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 8,
+        "old_total": 8
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 16,
+        "old_total": 16
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 20,
+        "old_total": 20
+      }
+    },
+    "raw_nwb_sha256": "9d315865987b770bf50e184e3d420d5e540443962a19885692c02b580f813bac"
+  },
+  {
+    "path": "sub-anm106213/sub-anm106213_ses-20101215_obj-1copi4i_behavior+icephys.nwb",
+    "n_events": 1471,
+    "nwb_subject_id": "anm106213",
+    "table_subject_id": "anm106213",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 405.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 405.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 14,
+        "old_total": 14
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 2,
+        "old_total": 2
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 7,
+        "old_total": 7
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 7,
+        "old_total": 7
+      }
+    },
+    "raw_nwb_sha256": "e41b751b52d4b8e0c5d373e3c73acca4682dce71d32dc4120958cb8e918c1654"
+  },
+  {
+    "path": "sub-anm106213/sub-anm106213_ses-20101215_obj-1ykz3wz_behavior+icephys.nwb",
+    "n_events": 642,
+    "nwb_subject_id": "anm106213",
+    "table_subject_id": "anm106213",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 475.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 475.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 14,
+        "old_total": 14
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 0,
+        "old_total": 0
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 29,
+        "old_total": 29
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 39,
+        "old_total": 39
+      }
+    },
+    "raw_nwb_sha256": "8fa1c714bd6b45ac0eedd9dab8323299c0ddf4ee5df83a1e3322f0f9f69eaf32"
+  },
+  {
+    "path": "sub-anm131970/sub-anm131970_ses-20110511_behavior+icephys.nwb",
+    "n_events": 555,
+    "nwb_subject_id": "anm131970",
+    "table_subject_id": "anm131970",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 453.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 453.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 333,
+        "old_total": 334
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 65,
+        "old_total": 65
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 181,
+        "old_total": 181
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 280,
+        "old_total": 280
+      }
+    },
+    "raw_nwb_sha256": "007272c4573df68e2d527412f91e6ab2e867a9114cdff129d1bbe2ad87e0692f"
+  },
+  {
+    "path": "sub-anm134333/sub-anm134333_ses-20110601_behavior+icephys.nwb",
+    "n_events": 847,
+    "nwb_subject_id": "anm134333",
+    "table_subject_id": "anm134333",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 536.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 536.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 8,
+        "old_total": 8
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 6,
+        "old_total": 6
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 15,
+        "old_total": 15
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 18,
+        "old_total": 18
+      }
+    },
+    "raw_nwb_sha256": "f1cf3acb89042de0a882c632c9f8ea428c6ebd470b39bc68b17228eceb2ae63c"
+  },
+  {
+    "path": "sub-anm134333/sub-anm134333_ses-20110606_behavior+icephys.nwb",
+    "n_events": 915,
+    "nwb_subject_id": "anm134333",
+    "table_subject_id": "anm134333",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 815.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 815.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 339,
+        "old_total": 339
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 71,
+        "old_total": 71
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 152,
+        "old_total": 152
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 225,
+        "old_total": 225
+      }
+    },
+    "raw_nwb_sha256": "1a888b3a0b3ac25157549a5f7dc96fb1d2393b67458d9cdc5d36d0e7344ebc14"
+  },
+  {
+    "path": "sub-anm134333/sub-anm134333_ses-20110607_behavior+icephys.nwb",
+    "n_events": 2118,
+    "nwb_subject_id": "anm134333",
+    "table_subject_id": "anm134333",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 784.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 784.00",
+    "max_behavior_alignment_error_s": 4.547473508864641e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 1038,
+        "old_total": 1037
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 167,
+        "old_total": 167
+      },
+      "post_30": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 1375,
+        "old_total": 1376
+      },
+      "post_50": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 2091,
+        "old_total": 2091
+      }
+    },
+    "raw_nwb_sha256": "ae8b26e708cd63127a1948a43a59f66292482755a384cb57922b28e7d7282033"
+  },
+  {
+    "path": "sub-anm17702/sub-anm17702_ses-20100430_behavior+icephys.nwb",
+    "n_events": 1232,
+    "nwb_subject_id": "anm17702",
+    "table_subject_id": "anm17702",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 844.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 844.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 5205,
+        "old_total": 5203
+      },
+      "post_10": {
+        "n_different": 7,
+        "max_absolute_difference": 1,
+        "new_total": 985,
+        "old_total": 992
+      },
+      "post_30": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 3580,
+        "old_total": 3582
+      },
+      "post_50": {
+        "n_different": 3,
+        "max_absolute_difference": 1,
+        "new_total": 5862,
+        "old_total": 5865
+      }
+    },
+    "raw_nwb_sha256": "2af143009550997e4f652881c97e88bc81d842a96e21c9a7e1405a9061754d94"
+  },
+  {
+    "path": "sub-anm17702/sub-anm17702_ses-20100507_behavior+icephys.nwb",
+    "n_events": 2207,
+    "nwb_subject_id": "anm17702",
+    "table_subject_id": "anm17702",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 410.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 410.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 247,
+        "old_total": 247
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 22,
+        "old_total": 24
+      },
+      "post_30": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 623,
+        "old_total": 624
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 731,
+        "old_total": 731
+      }
+    },
+    "raw_nwb_sha256": "f1c5490fdc4ec55a894bc63ac095ed325d59bbae9cacdc8ece5805cf1511b27c"
+  },
+  {
+    "path": "sub-anm211295/sub-anm211295_ses-20131015_behavior+icephys+ogen.nwb",
+    "n_events": 733,
+    "nwb_subject_id": "anm211295",
+    "table_subject_id": "anm211295",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 549.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 549.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 97,
+        "old_total": 97
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 29,
+        "old_total": 29
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 56,
+        "old_total": 56
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 121,
+        "old_total": 121
+      }
+    },
+    "raw_nwb_sha256": "bbab1200e353d72ca1415661f609e360f1bf0a0060640c9a1d0d9a7821882483"
+  },
+  {
+    "path": "sub-anm215592/sub-anm215592_ses-20131015_obj-8s1awh_behavior+icephys+ogen.nwb",
+    "n_events": 521,
+    "nwb_subject_id": "anm215592",
+    "table_subject_id": "anm215592",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 439.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 439.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 36,
+        "old_total": 36
+      },
+      "post_10": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 5,
+        "old_total": 6
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 67,
+        "old_total": 67
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 79,
+        "old_total": 79
+      }
+    },
+    "raw_nwb_sha256": "a756040b830d1d7ad256a19b6da1594c8f3918c8347bf11f8991641245f60789"
+  },
+  {
+    "path": "sub-anm215592/sub-anm215592_ses-20131015_obj-odx8px_behavior+icephys+ogen.nwb",
+    "n_events": 679,
+    "nwb_subject_id": "anm215592",
+    "table_subject_id": "anm215592",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 471.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 471.00",
+    "max_behavior_alignment_error_s": 1.1368683772161603e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 1092,
+        "old_total": 1092
+      },
+      "post_10": {
+        "n_different": 6,
+        "max_absolute_difference": 1,
+        "new_total": 249,
+        "old_total": 255
+      },
+      "post_30": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 1463,
+        "old_total": 1465
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 2124,
+        "old_total": 2124
+      }
+    },
+    "raw_nwb_sha256": "52a15c3cf516b2005ecadc3ab78a61d1ae21fcd61cc61d7a316763863eeb90b4"
+  },
+  {
+    "path": "sub-anm215592/sub-anm215592_ses-20131017_behavior+icephys+ogen.nwb",
+    "n_events": 948,
+    "nwb_subject_id": "anm215592",
+    "table_subject_id": "anm215592",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 510.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 510.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 55,
+        "old_total": 55
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 12,
+        "old_total": 12
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 21,
+        "old_total": 21
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 56,
+        "old_total": 56
+      }
+    },
+    "raw_nwb_sha256": "cb8d65adf279dd418a5e52a2a49b0e3bb299a2da34db409a2009bf42638c80db"
+  },
+  {
+    "path": "sub-anm215592/sub-anm215592_ses-20131023_behavior+icephys+ogen.nwb",
+    "n_events": 1369,
+    "nwb_subject_id": "anm215592",
+    "table_subject_id": "anm215592",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 560.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 560.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 661,
+        "old_total": 660
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 104,
+        "old_total": 106
+      },
+      "post_30": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 1305,
+        "old_total": 1307
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 1508,
+        "old_total": 1508
+      }
+    },
+    "raw_nwb_sha256": "20ee6b7f9a7d236451f150c21b7f90476ddfe87c885d75df9a862776188422a6"
+  },
+  {
+    "path": "sub-anm217330/sub-anm217330_ses-20131126_behavior+icephys+ogen.nwb",
+    "n_events": 800,
+    "nwb_subject_id": "anm217330",
+    "table_subject_id": "anm217330",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 560.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 560.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 43,
+        "old_total": 43
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 11,
+        "old_total": 11
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 17,
+        "old_total": 17
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 37,
+        "old_total": 37
+      }
+    },
+    "raw_nwb_sha256": "54b2ad929c48a97759e82f3323c67f6f923e64c3ee6d2cfb71b04a102238c93f"
+  },
+  {
+    "path": "sub-anm226692/sub-anm226692_ses-20140224_behavior+icephys+ogen.nwb",
+    "n_events": 1381,
+    "nwb_subject_id": "anm226692",
+    "table_subject_id": "anm226692",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 537.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 537.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 168,
+        "old_total": 167
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 42,
+        "old_total": 42
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 82,
+        "old_total": 82
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 149,
+        "old_total": 149
+      }
+    },
+    "raw_nwb_sha256": "f7bbfd9b1987668e2d957a267d1aae124dffc6111628a50d605e0534c5867b8d"
+  },
+  {
+    "path": "sub-anm226694/sub-anm226694_ses-20140222_obj-1noi7y3_behavior+icephys+ogen.nwb",
+    "n_events": 1104,
+    "nwb_subject_id": "anm226694",
+    "table_subject_id": "anm226694",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 444.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 444.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 49,
+        "old_total": 49
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 16,
+        "old_total": 16
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 96,
+        "old_total": 96
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 141,
+        "old_total": 141
+      }
+    },
+    "raw_nwb_sha256": "c65a3f769d6254f8fea29bbcaed656f8034d380c24c9e7c1045aa6cb4cbcef9c"
+  },
+  {
+    "path": "sub-anm226694/sub-anm226694_ses-20140222_obj-cj20ns_behavior+icephys+ogen.nwb",
+    "n_events": 1072,
+    "nwb_subject_id": "anm226694",
+    "table_subject_id": "anm226694",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 547.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 547.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 1111,
+        "old_total": 1111
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 133,
+        "old_total": 133
+      },
+      "post_30": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 1182,
+        "old_total": 1183
+      },
+      "post_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 2000,
+        "old_total": 2001
+      }
+    },
+    "raw_nwb_sha256": "52cb8701209eccfadff364fbab6f9ca432f49241632c2dafca2c781b7951ab25"
+  },
+  {
+    "path": "sub-anm226694/sub-anm226694_ses-20140225_behavior+icephys+ogen.nwb",
+    "n_events": 1299,
+    "nwb_subject_id": "anm226694",
+    "table_subject_id": "anm226694",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 542.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 542.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 112,
+        "old_total": 112
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 12,
+        "old_total": 12
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 157,
+        "old_total": 157
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 275,
+        "old_total": 275
+      }
+    },
+    "raw_nwb_sha256": "be0f0f53744fa0958aec4bac1876ead820a1379b22fa7fc401ae5d553465cc74"
+  },
+  {
+    "path": "sub-anm226695/sub-anm226695_ses-20140224_obj-1d0uka0_behavior+icephys+ogen.nwb",
+    "n_events": 314,
+    "nwb_subject_id": "anm226695",
+    "table_subject_id": "anm226695",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 457.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 457.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 188,
+        "old_total": 188
+      },
+      "post_10": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 60,
+        "old_total": 61
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 245,
+        "old_total": 245
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 374,
+        "old_total": 374
+      }
+    },
+    "raw_nwb_sha256": "cf6ee97c829a95b340e3eda91670511ff4522407a76a472183f7e48ba6068427"
+  },
+  {
+    "path": "sub-anm226695/sub-anm226695_ses-20140224_obj-y42tpg_behavior+icephys+ogen.nwb",
+    "n_events": 514,
+    "nwb_subject_id": "anm226695",
+    "table_subject_id": "anm226695",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 512.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 512.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 43,
+        "old_total": 43
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 4,
+        "old_total": 4
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 96,
+        "old_total": 96
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 99,
+        "old_total": 99
+      }
+    },
+    "raw_nwb_sha256": "29540ea2e02962f9485cb9c15937c35c47667a0113a30cf480d2dfa0bb0bbea3"
+  },
+  {
+    "path": "sub-anm226695/sub-anm226695_ses-20140225_behavior+icephys+ogen.nwb",
+    "n_events": 608,
+    "nwb_subject_id": "anm226695",
+    "table_subject_id": "anm226695",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 500.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 500.00",
+    "max_behavior_alignment_error_s": 1.1368683772161603e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 394,
+        "old_total": 394
+      },
+      "post_10": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 57,
+        "old_total": 58
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 716,
+        "old_total": 716
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 1027,
+        "old_total": 1027
+      }
+    },
+    "raw_nwb_sha256": "af555bff31e4750ffc9fdfd3bc25dae4389cb0def737618f539c64a52ca0b8f2"
+  },
+  {
+    "path": "sub-anm234230/sub-anm234230_ses-20140119_behavior+icephys+ogen.nwb",
+    "n_events": 774,
+    "nwb_subject_id": "anm234230",
+    "table_subject_id": "anm234230",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 528.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 528.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 175,
+        "old_total": 175
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 50,
+        "old_total": 50
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 92,
+        "old_total": 92
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 162,
+        "old_total": 162
+      }
+    },
+    "raw_nwb_sha256": "b6b516c331d07746decafdad8e75965916123723a95c20950aa65226531dc370"
+  },
+  {
+    "path": "sub-anm234231/sub-anm234231_ses-20140126_behavior+icephys+ogen.nwb",
+    "n_events": 385,
+    "nwb_subject_id": "anm234231",
+    "table_subject_id": "anm234231",
+    "cortical_layer": "4",
+    "brain_subregion": "surround",
+    "recording_depth_um": 451.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: surround; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 451.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 67,
+        "old_total": 67
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 12,
+        "old_total": 12
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 30,
+        "old_total": 30
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 82,
+        "old_total": 82
+      }
+    },
+    "raw_nwb_sha256": "cb718fccdb6760c833aa101a904547e3b718f22ee0adb15ffc6184b784713637"
+  },
+  {
+    "path": "sub-anm234232/sub-anm234232_ses-20140108_behavior+icephys+ogen.nwb",
+    "n_events": 684,
+    "nwb_subject_id": "anm234232",
+    "table_subject_id": "anm234232",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 470.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 470.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 110,
+        "old_total": 110
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 56,
+        "old_total": 58
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 250,
+        "old_total": 250
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 281,
+        "old_total": 281
+      }
+    },
+    "raw_nwb_sha256": "b2629b7d6ca414a81efa70226baaf2756ece096bb5c0343633616d14eb79daca"
+  },
+  {
+    "path": "sub-anm244024/sub-anm244024_ses-20141111_behavior+icephys+ogen.nwb",
+    "n_events": 142,
+    "nwb_subject_id": "anm244024",
+    "table_subject_id": "anm244024",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 532.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 532.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 6,
+        "old_total": 6
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 9,
+        "old_total": 9
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 25,
+        "old_total": 25
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 28,
+        "old_total": 28
+      }
+    },
+    "raw_nwb_sha256": "f9be18bfc602c0fd1fd97a447fcdfa5b2eedb5f8486347d4156176fb3e81877e"
+  },
+  {
+    "path": "sub-anm244024/sub-anm244024_ses-20141112_obj-1otlhm2_behavior+icephys+ogen.nwb",
+    "n_events": 88,
+    "nwb_subject_id": "anm244024",
+    "table_subject_id": "anm244024",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 465.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 465.00",
+    "max_behavior_alignment_error_s": 2.842170943040401e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 17,
+        "old_total": 17
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 15,
+        "old_total": 15
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 18,
+        "old_total": 18
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 20,
+        "old_total": 20
+      }
+    },
+    "raw_nwb_sha256": "1640dd9c8a9cc40937c160d3b5d0264542840d15c5ad53586370f805f01eaed2"
+  },
+  {
+    "path": "sub-anm244024/sub-anm244024_ses-20141112_obj-8tj80c_behavior+icephys+ogen.nwb",
+    "n_events": 356,
+    "nwb_subject_id": "anm244024",
+    "table_subject_id": "anm244024",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 555.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 555.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 29,
+        "old_total": 29
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 10,
+        "old_total": 10
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 67,
+        "old_total": 67
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 72,
+        "old_total": 72
+      }
+    },
+    "raw_nwb_sha256": "cb78a369d2ceb52b295abd8e5c9cdd4195ec120cf0beafed74028aac56d5204e"
+  },
+  {
+    "path": "sub-anm244024/sub-anm244024_ses-20141112_obj-jyoa6b_behavior+icephys+ogen.nwb",
+    "n_events": 98,
+    "nwb_subject_id": "anm244024",
+    "table_subject_id": "anm244024",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 448.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 448.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 21,
+        "old_total": 21
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 38,
+        "old_total": 38
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 93,
+        "old_total": 93
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 98,
+        "old_total": 98
+      }
+    },
+    "raw_nwb_sha256": "6453e4fcd3799f17f0b76fe062c437741295b1b5876fa1b45ccb040e72fc31ca"
+  },
+  {
+    "path": "sub-anm244025/sub-anm244025_ses-20141026_obj-1q7bmz0_behavior+icephys+ogen.nwb",
+    "n_events": 503,
+    "nwb_subject_id": "anm244025",
+    "table_subject_id": "anm244025",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 450.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 450.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 31,
+        "old_total": 31
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 14,
+        "old_total": 14
+      },
+      "post_30": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 49,
+        "old_total": 50
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 62,
+        "old_total": 62
+      }
+    },
+    "raw_nwb_sha256": "88bc0be419a0985379f0b689b1c8cd8c08e9d685180da3450e97a0f2244277f4"
+  },
+  {
+    "path": "sub-anm244025/sub-anm244025_ses-20141026_obj-gspsia_behavior+icephys+ogen.nwb",
+    "n_events": 332,
+    "nwb_subject_id": "anm244025",
+    "table_subject_id": "anm244025",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 447.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 447.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 37,
+        "old_total": 37
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 45,
+        "old_total": 45
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 63,
+        "old_total": 63
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 74,
+        "old_total": 74
+      }
+    },
+    "raw_nwb_sha256": "8544e062f31d2d4d8d86bdd0f531d244029181a9e12624834898b4c8646d2314"
+  },
+  {
+    "path": "sub-anm244028/sub-anm244028_ses-20141021_obj-15ygrjz_behavior+icephys+ogen.nwb",
+    "n_events": 251,
+    "nwb_subject_id": "anm244028",
+    "table_subject_id": "anm244028",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 472.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 472.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 56,
+        "old_total": 56
+      },
+      "post_10": {
+        "n_different": 3,
+        "max_absolute_difference": 1,
+        "new_total": 57,
+        "old_total": 60
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 138,
+        "old_total": 138
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 154,
+        "old_total": 154
+      }
+    },
+    "raw_nwb_sha256": "ea9038c2f172bb653d1bf1adb0d55ef24edbf9463257d0a3411516e8d991fd82"
+  },
+  {
+    "path": "sub-anm244028/sub-anm244028_ses-20141021_obj-1a5sqoc_behavior+icephys+ogen.nwb",
+    "n_events": 193,
+    "nwb_subject_id": "anm244028",
+    "table_subject_id": "anm244028",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 559.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 559.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 153,
+        "old_total": 153
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 243,
+        "old_total": 243
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 456,
+        "old_total": 456
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 499,
+        "old_total": 499
+      }
+    },
+    "raw_nwb_sha256": "f85f3debe2d83b2ad402ac15115eaefd8497d09f52508f6af6157f38c387c2cc"
+  },
+  {
+    "path": "sub-anm244028/sub-anm244028_ses-20141022_behavior+icephys+ogen.nwb",
+    "n_events": 201,
+    "nwb_subject_id": "anm244028",
+    "table_subject_id": "anm244028",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 502.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 502.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 29,
+        "old_total": 29
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 2,
+        "old_total": 2
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 53,
+        "old_total": 53
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 69,
+        "old_total": 69
+      }
+    },
+    "raw_nwb_sha256": "d45d6f2fe86691a87d9356adf34eb009abb239e81eaff3aab884cd7d949b64a6"
+  },
+  {
+    "path": "sub-anm266945/sub-anm266945_ses-20141221_behavior+icephys+ogen.nwb",
+    "n_events": 382,
+    "nwb_subject_id": "anm266945",
+    "table_subject_id": "anm266945",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 539.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 539.00",
+    "max_behavior_alignment_error_s": 1.1368683772161603e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 197,
+        "old_total": 197
+      },
+      "post_10": {
+        "n_different": 3,
+        "max_absolute_difference": 1,
+        "new_total": 80,
+        "old_total": 83
+      },
+      "post_30": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 525,
+        "old_total": 526
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 687,
+        "old_total": 687
+      }
+    },
+    "raw_nwb_sha256": "bf6a389b504854377a0fdc8ad8190bc7fed77c5352553bb88082c607eb87afba"
+  },
+  {
+    "path": "sub-anm266945/sub-anm266945_ses-20141222_obj-14qffnp_behavior+icephys+ogen.nwb",
+    "n_events": 533,
+    "nwb_subject_id": "anm266945",
+    "table_subject_id": "anm266945",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 486.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 486.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 51,
+        "old_total": 51
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 35,
+        "old_total": 37
+      },
+      "post_30": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 387,
+        "old_total": 388
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 485,
+        "old_total": 485
+      }
+    },
+    "raw_nwb_sha256": "d4c10479fe7ba3fd6c50c99a85bfec39944a098f61fdd4116ff78949cbc3fbbb"
+  },
+  {
+    "path": "sub-anm266945/sub-anm266945_ses-20141222_obj-1574tgg_behavior+icephys+ogen.nwb",
+    "n_events": 186,
+    "nwb_subject_id": "anm266945",
+    "table_subject_id": "anm266945",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 552.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 552.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 10,
+        "old_total": 10
+      },
+      "post_10": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 35,
+        "old_total": 36
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 83,
+        "old_total": 83
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 101,
+        "old_total": 101
+      }
+    },
+    "raw_nwb_sha256": "e56330845bfba9f3c75ca8306ab18375cc6111e760b2c36f5a9ddd4d535a6074"
+  },
+  {
+    "path": "sub-anm266951/sub-anm266951_ses-20141201_obj-10p0o3z_behavior+icephys+ogen.nwb",
+    "n_events": 118,
+    "nwb_subject_id": "anm266951",
+    "table_subject_id": "anm266951",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 501.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 501.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 22,
+        "old_total": 22
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 41,
+        "old_total": 41
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 66,
+        "old_total": 66
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 74,
+        "old_total": 74
+      }
+    },
+    "raw_nwb_sha256": "323dcb6a5375e027dd5d13e05bd62d67782424932d5fd9f7fa9fc4e6895efa4b"
+  },
+  {
+    "path": "sub-anm266951/sub-anm266951_ses-20141201_obj-1i6vt6d_behavior+icephys+ogen.nwb",
+    "n_events": 148,
+    "nwb_subject_id": "anm266951",
+    "table_subject_id": "anm266951",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 444.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 444.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 8,
+        "old_total": 8
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 41,
+        "old_total": 41
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 73,
+        "old_total": 73
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 85,
+        "old_total": 85
+      }
+    },
+    "raw_nwb_sha256": "e555965c5f59a87989ca901be5fbe5c0d7340d3c3b74b5b7b97ecadd7013db71"
+  },
+  {
+    "path": "sub-jf35892/sub-jf35892_ses-20100219_behavior+icephys.nwb",
+    "n_events": 1023,
+    "nwb_subject_id": "jf35892",
+    "table_subject_id": "jf35892",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 442.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 442.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 164,
+        "old_total": 164
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 20,
+        "old_total": 22
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 393,
+        "old_total": 393
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 461,
+        "old_total": 461
+      }
+    },
+    "raw_nwb_sha256": "bf776aa6b53dbf4a4b97fda30c0b0fb4da164bd851b4a69caedcbd88ba27f012"
+  },
+  {
+    "path": "sub-jf35892/sub-jf35892_ses-20100308_behavior+icephys.nwb",
+    "n_events": 1516,
+    "nwb_subject_id": "jf35892",
+    "table_subject_id": "jf35892",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 565.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 565.00",
+    "max_behavior_alignment_error_s": 1.1368683772161603e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 236,
+        "old_total": 236
+      },
+      "post_10": {
+        "n_different": 15,
+        "max_absolute_difference": 1,
+        "new_total": 83,
+        "old_total": 98
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 775,
+        "old_total": 775
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 890,
+        "old_total": 890
+      }
+    },
+    "raw_nwb_sha256": "d2cff2488409bee4bdba2d57bb846181d77aba3fee50db3bbbf77cb229f3e19f"
+  },
+  {
+    "path": "sub-jf35892/sub-jf35892_ses-20100310_behavior+icephys.nwb",
+    "n_events": 1316,
+    "nwb_subject_id": "jf35892",
+    "table_subject_id": "jf35892",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 483.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 483.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 94,
+        "old_total": 94
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 4,
+        "old_total": 4
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 220,
+        "old_total": 220
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 278,
+        "old_total": 278
+      }
+    },
+    "raw_nwb_sha256": "1ee049e7c9410710f470ea73e26d5062f07561c5f5b089f1b1c85ec9132230a4"
+  },
+  {
+    "path": "sub-jf35892/sub-jf35892_ses-20100311_behavior+icephys.nwb",
+    "n_events": 482,
+    "nwb_subject_id": "jf35892",
+    "table_subject_id": "jf35892",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 536.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 536.00",
+    "max_behavior_alignment_error_s": 1.1368683772161603e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 104,
+        "old_total": 104
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 10,
+        "old_total": 10
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 130,
+        "old_total": 130
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 238,
+        "old_total": 238
+      }
+    },
+    "raw_nwb_sha256": "aac76dd1c901730af8c945d0cda4031a42b396ce49c56401c79a1b699cfeff9f"
+  },
+  {
+    "path": "sub-jf37166/sub-jf37166_ses-20100304_behavior+icephys.nwb",
+    "n_events": 728,
+    "nwb_subject_id": "jf37166",
+    "table_subject_id": "jf37166",
+    "cortical_layer": "4",
+    "brain_subregion": "C2",
+    "recording_depth_um": 555.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 4; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 555.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 187,
+        "old_total": 187
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 89,
+        "old_total": 89
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 293,
+        "old_total": 293
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 311,
+        "old_total": 311
+      }
+    },
+    "raw_nwb_sha256": "311051460c5bd3d58a3341ccd56ad3aa603b6a276bf1b0308c5e4694c71516ee"
+  },
+  {
+    "path": "sub-jf42400/sub-jf42400_ses-20100612_behavior+icephys.nwb",
+    "n_events": 741,
+    "nwb_subject_id": "jf42400",
+    "table_subject_id": "jf42400",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 804.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 804.00",
+    "max_behavior_alignment_error_s": 2.2737367544323206e-13,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 221,
+        "old_total": 221
+      },
+      "post_10": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 39,
+        "old_total": 40
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 191,
+        "old_total": 191
+      },
+      "post_50": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 316,
+        "old_total": 318
+      }
+    },
+    "raw_nwb_sha256": "27a8363e4c22d6696e2ded82588556456a13a0562917376ed44c493172498afb"
+  },
+  {
+    "path": "sub-jf42400/sub-jf42400_ses-20100613_behavior+icephys.nwb",
+    "n_events": 1468,
+    "nwb_subject_id": "jf42400",
+    "table_subject_id": "jf42400",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 830.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 830.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 2048,
+        "old_total": 2046
+      },
+      "post_10": {
+        "n_different": 2,
+        "max_absolute_difference": 1,
+        "new_total": 356,
+        "old_total": 358
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 1472,
+        "old_total": 1472
+      },
+      "post_50": {
+        "n_different": 4,
+        "max_absolute_difference": 1,
+        "new_total": 2309,
+        "old_total": 2311
+      }
+    },
+    "raw_nwb_sha256": "107b30bfe7fe7490aa6fabd41b6eac421aac0dd6e79ec0b5766d7f4f654a10a4"
+  },
+  {
+    "path": "sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb",
+    "n_events": 1120,
+    "nwb_subject_id": "jf42400",
+    "table_subject_id": "jf42400",
+    "cortical_layer": "5",
+    "brain_subregion": "C2",
+    "recording_depth_um": 707.0,
+    "intracellular_location": "brain_region: barrel; brain_subregion: C2; cortical_layer: 5; hemisphere: left; brain_location_full_name: S1, barrel field, Paxinos; depth: 707.00",
+    "max_behavior_alignment_error_s": 5.684341886080802e-14,
+    "count_comparison": {
+      "pre_50": {
+        "n_different": 1,
+        "max_absolute_difference": 1,
+        "new_total": 118,
+        "old_total": 117
+      },
+      "post_10": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 29,
+        "old_total": 29
+      },
+      "post_30": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 80,
+        "old_total": 80
+      },
+      "post_50": {
+        "n_different": 0,
+        "max_absolute_difference": 0,
+        "new_total": 110,
+        "old_total": 110
+      }
+    },
+    "raw_nwb_sha256": "c46ee923465494e52037584cfad9b42f5c1298e423f2a3bd99e2e0d491f1063a"
+  }
+]

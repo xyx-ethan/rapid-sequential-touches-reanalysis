@@ -1,0 +1,736 @@
+{
+  "count": 52,
+  "dandiset": "000013",
+  "doi": "10.48324/dandi.000013/0.220126.2143",
+  "results": [
+    {
+      "asset_id": "cbcf1d6d-7f64-4d1f-8692-75e09e177ca6",
+      "blob": "dade768a-763e-4b6f-a7d1-f279aab1bf15",
+      "contentSize": 297607244,
+      "created": "2021-07-02T12:10:10.762251Z",
+      "digest": {
+        "dandi:dandi-etag": "9a5d7190a9114c19549acd088ef51ffd-5",
+        "dandi:sha2-256": "fe7ac132d5bcbb98ec351d057e261b84c1f44dd8212c87fe5a2d2a7118e79ed1"
+      },
+      "modified": "2021-08-05T18:46:30.968431Z",
+      "path": "sub-anm106211/sub-anm106211_ses-20100925_behavior+icephys.nwb",
+      "size": 297607244,
+      "zarr": null
+    },
+    {
+      "asset_id": "26fa1838-25b2-41ab-be10-5ecffa201998",
+      "blob": "6f9b32e7-df15-4452-be9f-7a75f0516f0a",
+      "contentSize": 177562230,
+      "created": "2021-07-02T12:10:10.988958Z",
+      "digest": {
+        "dandi:dandi-etag": "a46cf905de7db62135f58cc5fd798d3e-3",
+        "dandi:sha2-256": "caff080559512a94953d64bf22d2c3dcc0a3a405668fc1b3bcdc0f9798288b1d"
+      },
+      "modified": "2021-08-05T18:46:31.009607Z",
+      "path": "sub-anm106213/sub-anm106213_ses-20100822_behavior+icephys.nwb",
+      "size": 177562230,
+      "zarr": null
+    },
+    {
+      "asset_id": "7951cc25-a3dd-45c8-a61a-0352559deb1e",
+      "blob": "4a5ecc76-9955-438d-aa7d-fb80de61ec67",
+      "contentSize": 209819910,
+      "created": "2021-07-02T12:10:11.387857Z",
+      "digest": {
+        "dandi:dandi-etag": "bf85ad42558c19ec1385cec5a8ebe8c3-4",
+        "dandi:sha2-256": "eeca9b24f391775ee1997aa2c0b780db72216482d2afd33ded8b57e5cd628bb5"
+      },
+      "modified": "2021-08-05T18:46:31.049383Z",
+      "path": "sub-anm101105/sub-anm101105_ses-20100619_behavior+icephys.nwb",
+      "size": 209819910,
+      "zarr": null
+    },
+    {
+      "asset_id": "c8bb6074-f2dc-454a-a2e3-3ae111d1f5d5",
+      "blob": "23cbe861-bf9f-468a-92f4-a9288aeed69c",
+      "contentSize": 186519848,
+      "created": "2021-07-02T12:10:11.714000Z",
+      "digest": {
+        "dandi:dandi-etag": "a652be7a8fe03915f63706b5c9ca3679-3",
+        "dandi:sha2-256": "9934aee76b4929c5ea7cafdb5ae93848033635c8928028ed28bfc309b69e1baa"
+      },
+      "modified": "2021-08-05T18:46:31.085733Z",
+      "path": "sub-anm101105/sub-anm101105_ses-20100621_behavior+icephys.nwb",
+      "size": 186519848,
+      "zarr": null
+    },
+    {
+      "asset_id": "64abe2e2-cfcd-43d8-923c-3675753b2da0",
+      "blob": "ac5c6927-a0a7-45c6-a0b0-603078fd64cd",
+      "contentSize": 211611372,
+      "created": "2021-07-02T12:10:12.062548Z",
+      "digest": {
+        "dandi:dandi-etag": "bef524fba70875c572697260d4811687-4",
+        "dandi:sha2-256": "9d315865987b770bf50e184e3d420d5e540443962a19885692c02b580f813bac"
+      },
+      "modified": "2021-08-05T18:46:31.124039Z",
+      "path": "sub-anm106213/sub-anm106213_ses-20101214_behavior+icephys.nwb",
+      "size": 211611372,
+      "zarr": null
+    },
+    {
+      "asset_id": "d62f3753-d1e0-48ac-87a4-1039319eabe6",
+      "blob": "1e1d67eb-3305-4a8d-b356-5b529bd235e1",
+      "contentSize": 344185792,
+      "created": "2021-07-02T12:10:12.884326Z",
+      "digest": {
+        "dandi:dandi-etag": "684cbc0eef816d748b88babad8caad77-6",
+        "dandi:sha2-256": "e41b751b52d4b8e0c5d373e3c73acca4682dce71d32dc4120958cb8e918c1654"
+      },
+      "modified": "2021-08-05T18:46:31.164186Z",
+      "path": "sub-anm106213/sub-anm106213_ses-20101215_obj-1copi4i_behavior+icephys.nwb",
+      "size": 344185792,
+      "zarr": null
+    },
+    {
+      "asset_id": "1d82605e-be09-4519-8ae1-6977b91a4526",
+      "blob": "0eae62a5-523f-43ca-875d-6f85a5d153db",
+      "contentSize": 190112900,
+      "created": "2021-07-02T12:10:13.530637Z",
+      "digest": {
+        "dandi:dandi-etag": "b8d8646ba9d06a63310c9a6fb88aaf11-3",
+        "dandi:sha2-256": "007272c4573df68e2d527412f91e6ab2e867a9114cdff129d1bbe2ad87e0692f"
+      },
+      "modified": "2021-08-05T18:46:31.204385Z",
+      "path": "sub-anm131970/sub-anm131970_ses-20110511_behavior+icephys.nwb",
+      "size": 190112900,
+      "zarr": null
+    },
+    {
+      "asset_id": "f574447e-2a3a-4efc-9ee6-9165996e5ce4",
+      "blob": "e4fe6053-4300-42f2-bc38-089918c393ca",
+      "contentSize": 335218330,
+      "created": "2021-07-02T12:10:14.323457Z",
+      "digest": {
+        "dandi:dandi-etag": "b91cf4920336d8cc8fbce765bad8bd16-5",
+        "dandi:sha2-256": "8fa1c714bd6b45ac0eedd9dab8323299c0ddf4ee5df83a1e3322f0f9f69eaf32"
+      },
+      "modified": "2021-08-05T18:46:31.243761Z",
+      "path": "sub-anm106213/sub-anm106213_ses-20101215_obj-1ykz3wz_behavior+icephys.nwb",
+      "size": 335218330,
+      "zarr": null
+    },
+    {
+      "asset_id": "27966bc5-9409-49f7-befb-972a2cd6750e",
+      "blob": "391a603b-ca39-4456-a91b-fc30e30ff263",
+      "contentSize": 256402090,
+      "created": "2021-07-02T12:10:15.037196Z",
+      "digest": {
+        "dandi:dandi-etag": "270dee60d60908a87d2b6b91afbdcc51-4",
+        "dandi:sha2-256": "861683d2df70f44ec50ea19b5d26d0985723478400ff684eac67637e3e2c2255"
+      },
+      "modified": "2021-08-05T18:46:31.278816Z",
+      "path": "sub-anm101105/sub-anm101105_ses-20100620_behavior+icephys.nwb",
+      "size": 256402090,
+      "zarr": null
+    },
+    {
+      "asset_id": "8c838ece-2cfc-4f03-aebb-a061cd60a154",
+      "blob": "8ced0b5d-d27c-4c95-ae36-2f2feec93eb7",
+      "contentSize": 201239666,
+      "created": "2021-07-02T12:10:15.715174Z",
+      "digest": {
+        "dandi:dandi-etag": "78ecb1f7d729da7ac071a15f40d66db9-3",
+        "dandi:sha2-256": "f1cf3acb89042de0a882c632c9f8ea428c6ebd470b39bc68b17228eceb2ae63c"
+      },
+      "modified": "2021-08-05T18:46:31.314734Z",
+      "path": "sub-anm134333/sub-anm134333_ses-20110601_behavior+icephys.nwb",
+      "size": 201239666,
+      "zarr": null
+    },
+    {
+      "asset_id": "63b54375-9949-4c98-9b8a-87884cf0672c",
+      "blob": "6a46b41a-41a8-4c1c-a130-8f3bf800fd8a",
+      "contentSize": 213197378,
+      "created": "2021-07-02T12:10:16.372819Z",
+      "digest": {
+        "dandi:dandi-etag": "0c0f1f0066e3ab3b8d5e54d064bc2b26-4",
+        "dandi:sha2-256": "1a888b3a0b3ac25157549a5f7dc96fb1d2393b67458d9cdc5d36d0e7344ebc14"
+      },
+      "modified": "2021-08-05T18:46:31.352552Z",
+      "path": "sub-anm134333/sub-anm134333_ses-20110606_behavior+icephys.nwb",
+      "size": 213197378,
+      "zarr": null
+    },
+    {
+      "asset_id": "fde2b86f-8826-47b5-9b9c-8603a534e4f7",
+      "blob": "41a50b18-0b50-46bd-a97a-7483d0b0c225",
+      "contentSize": 172149624,
+      "created": "2021-07-02T12:10:17.091277Z",
+      "digest": {
+        "dandi:dandi-etag": "6e0530c286cc5416afb2fc884a9bd3f6-3",
+        "dandi:sha2-256": "2af143009550997e4f652881c97e88bc81d842a96e21c9a7e1405a9061754d94"
+      },
+      "modified": "2021-08-05T18:46:31.392742Z",
+      "path": "sub-anm17702/sub-anm17702_ses-20100430_behavior+icephys.nwb",
+      "size": 172149624,
+      "zarr": null
+    },
+    {
+      "asset_id": "2a14c744-e068-4cf3-94fe-26743429cebd",
+      "blob": "a5943372-849c-4e04-af09-fe7300d9039b",
+      "contentSize": 601353724,
+      "created": "2021-07-02T12:10:17.976586Z",
+      "digest": {
+        "dandi:dandi-etag": "adaa333328ce24a51f70636183d4dbf1-9",
+        "dandi:sha2-256": "ae8b26e708cd63127a1948a43a59f66292482755a384cb57922b28e7d7282033"
+      },
+      "modified": "2021-08-05T18:46:31.431995Z",
+      "path": "sub-anm134333/sub-anm134333_ses-20110607_behavior+icephys.nwb",
+      "size": 601353724,
+      "zarr": null
+    },
+    {
+      "asset_id": "31dcd580-cc8b-41b2-bebb-dfa39526f620",
+      "blob": "6c5cd030-db21-4120-8cb0-7a9457c08413",
+      "contentSize": 342510480,
+      "created": "2021-07-02T12:10:18.716593Z",
+      "digest": {
+        "dandi:dandi-etag": "23597e311cc5230ae17f24e5450de76d-6",
+        "dandi:sha2-256": "bbab1200e353d72ca1415661f609e360f1bf0a0060640c9a1d0d9a7821882483"
+      },
+      "modified": "2021-08-05T18:46:31.470021Z",
+      "path": "sub-anm211295/sub-anm211295_ses-20131015_behavior+icephys+ogen.nwb",
+      "size": 342510480,
+      "zarr": null
+    },
+    {
+      "asset_id": "30954ee6-f49b-4fe4-8c35-cf2e0c3655ad",
+      "blob": "ddb49f56-3542-44e2-b69c-aba2b9e4dde3",
+      "contentSize": 401426600,
+      "created": "2021-07-02T12:10:19.462776Z",
+      "digest": {
+        "dandi:dandi-etag": "8f837c8b5b0dbec72100915934785b94-6",
+        "dandi:sha2-256": "f1c5490fdc4ec55a894bc63ac095ed325d59bbae9cacdc8ece5805cf1511b27c"
+      },
+      "modified": "2021-08-05T18:46:31.508515Z",
+      "path": "sub-anm17702/sub-anm17702_ses-20100507_behavior+icephys.nwb",
+      "size": 401426600,
+      "zarr": null
+    },
+    {
+      "asset_id": "4f2a68a9-db1e-42ca-9ff8-d36ef39e883d",
+      "blob": "cad9e87d-9154-464c-91d6-2f08f2a9c354",
+      "contentSize": 243015536,
+      "created": "2021-07-02T12:10:20.204921Z",
+      "digest": {
+        "dandi:dandi-etag": "fc65cfddda8f20a75b3e2ddb20aa9010-4",
+        "dandi:sha2-256": "52a15c3cf516b2005ecadc3ab78a61d1ae21fcd61cc61d7a316763863eeb90b4"
+      },
+      "modified": "2021-08-05T18:46:31.543065Z",
+      "path": "sub-anm215592/sub-anm215592_ses-20131015_obj-odx8px_behavior+icephys+ogen.nwb",
+      "size": 243015536,
+      "zarr": null
+    },
+    {
+      "asset_id": "9b83a48c-44a9-4509-b36a-182d7eba9783",
+      "blob": "4d8c866a-2559-42d7-914c-f37b3b373438",
+      "contentSize": 294757856,
+      "created": "2021-07-02T12:10:20.989576Z",
+      "digest": {
+        "dandi:dandi-etag": "ef7266cd35834107461250ab9e32dccd-5",
+        "dandi:sha2-256": "54b2ad929c48a97759e82f3323c67f6f923e64c3ee6d2cfb71b04a102238c93f"
+      },
+      "modified": "2021-08-05T18:46:31.576358Z",
+      "path": "sub-anm217330/sub-anm217330_ses-20131126_behavior+icephys+ogen.nwb",
+      "size": 294757856,
+      "zarr": null
+    },
+    {
+      "asset_id": "5a221ef3-134e-402a-acb1-81fbbbba18be",
+      "blob": "10fddaf0-7f05-4548-b36f-587f5fdd05b9",
+      "contentSize": 479840020,
+      "created": "2021-07-02T12:10:21.702999Z",
+      "digest": {
+        "dandi:dandi-etag": "bf47386370be5148c4b7cf4b28dc3401-8",
+        "dandi:sha2-256": "20ee6b7f9a7d236451f150c21b7f90476ddfe87c885d75df9a862776188422a6"
+      },
+      "modified": "2021-08-05T18:46:31.613803Z",
+      "path": "sub-anm215592/sub-anm215592_ses-20131023_behavior+icephys+ogen.nwb",
+      "size": 479840020,
+      "zarr": null
+    },
+    {
+      "asset_id": "32649fdb-9f15-4f66-ba12-fb2c4013db6a",
+      "blob": "e25f1466-504a-45ab-9f42-3f20c674502d",
+      "contentSize": 408192656,
+      "created": "2021-07-02T12:10:22.392145Z",
+      "digest": {
+        "dandi:dandi-etag": "9cb7d4213a4310d6966eb79cd7b268e1-7",
+        "dandi:sha2-256": "cb8d65adf279dd418a5e52a2a49b0e3bb299a2da34db409a2009bf42638c80db"
+      },
+      "modified": "2021-08-05T18:46:31.644952Z",
+      "path": "sub-anm215592/sub-anm215592_ses-20131017_behavior+icephys+ogen.nwb",
+      "size": 408192656,
+      "zarr": null
+    },
+    {
+      "asset_id": "9888f851-a933-4cd6-9581-70f466be419f",
+      "blob": "ca3977a8-e6ff-48b8-91f1-54229ff21eef",
+      "contentSize": 288786824,
+      "created": "2021-07-02T12:10:23.344623Z",
+      "digest": {
+        "dandi:dandi-etag": "39fd250164563639f04c1f3fbab85122-5",
+        "dandi:sha2-256": "c65a3f769d6254f8fea29bbcaed656f8034d380c24c9e7c1045aa6cb4cbcef9c"
+      },
+      "modified": "2021-08-05T18:46:31.677057Z",
+      "path": "sub-anm226694/sub-anm226694_ses-20140222_obj-1noi7y3_behavior+icephys+ogen.nwb",
+      "size": 288786824,
+      "zarr": null
+    },
+    {
+      "asset_id": "05352418-0180-421d-b127-4233c3bc9c2b",
+      "blob": "cdba6cab-d173-4a96-84c2-ee4b45d54d1b",
+      "contentSize": 191268496,
+      "created": "2021-07-02T12:10:25.257425Z",
+      "digest": {
+        "dandi:dandi-etag": "eb72a940653183872ca55350eb34e76d-3",
+        "dandi:sha2-256": "52cb8701209eccfadff364fbab6f9ca432f49241632c2dafca2c781b7951ab25"
+      },
+      "modified": "2021-08-05T18:46:31.710746Z",
+      "path": "sub-anm226694/sub-anm226694_ses-20140222_obj-cj20ns_behavior+icephys+ogen.nwb",
+      "size": 191268496,
+      "zarr": null
+    },
+    {
+      "asset_id": "d54de92f-d7e6-40d3-ad6b-2e3b5f010e9d",
+      "blob": "4fde877d-68e1-4e76-8c08-f61641779db9",
+      "contentSize": 477849944,
+      "created": "2021-07-02T12:10:26.699691Z",
+      "digest": {
+        "dandi:dandi-etag": "6db941548ad0a1a2173a92be4442e545-8",
+        "dandi:sha2-256": "f7bbfd9b1987668e2d957a267d1aae124dffc6111628a50d605e0534c5867b8d"
+      },
+      "modified": "2021-08-05T18:46:31.743354Z",
+      "path": "sub-anm226692/sub-anm226692_ses-20140224_behavior+icephys+ogen.nwb",
+      "size": 477849944,
+      "zarr": null
+    },
+    {
+      "asset_id": "5c9b1033-8532-4cfd-8020-306c224ab698",
+      "blob": "f544747b-3ce9-4420-b915-f88a2cd9c6f8",
+      "contentSize": 314659328,
+      "created": "2021-07-02T12:10:27.400950Z",
+      "digest": {
+        "dandi:dandi-etag": "94a3be12fa0097ad7e4f8a085b803f6d-5",
+        "dandi:sha2-256": "be0f0f53744fa0958aec4bac1876ead820a1379b22fa7fc401ae5d553465cc74"
+      },
+      "modified": "2021-08-05T18:46:31.777958Z",
+      "path": "sub-anm226694/sub-anm226694_ses-20140225_behavior+icephys+ogen.nwb",
+      "size": 314659328,
+      "zarr": null
+    },
+    {
+      "asset_id": "06b76ef7-02b9-406b-a72e-bcff060a63b8",
+      "blob": "8ae1d730-6ba4-43aa-84ec-33669533f607",
+      "contentSize": 195248560,
+      "created": "2021-07-02T12:10:28.079878Z",
+      "digest": {
+        "dandi:dandi-etag": "b195450597e7cd30d5fcd5bbb83e3a42-3",
+        "dandi:sha2-256": "29540ea2e02962f9485cb9c15937c35c47667a0113a30cf480d2dfa0bb0bbea3"
+      },
+      "modified": "2021-08-05T18:46:31.812096Z",
+      "path": "sub-anm226695/sub-anm226695_ses-20140224_obj-y42tpg_behavior+icephys+ogen.nwb",
+      "size": 195248560,
+      "zarr": null
+    },
+    {
+      "asset_id": "925b6f18-8a7a-4460-80b4-6b817c5de17c",
+      "blob": "08c9647c-aedf-454f-a2d4-21b6345970b4",
+      "contentSize": 227090688,
+      "created": "2021-07-02T12:10:28.737257Z",
+      "digest": {
+        "dandi:dandi-etag": "1cb45260809afc50709ec442be0f9d9a-4",
+        "dandi:sha2-256": "af555bff31e4750ffc9fdfd3bc25dae4389cb0def737618f539c64a52ca0b8f2"
+      },
+      "modified": "2021-08-05T18:46:31.844591Z",
+      "path": "sub-anm226695/sub-anm226695_ses-20140225_behavior+icephys+ogen.nwb",
+      "size": 227090688,
+      "zarr": null
+    },
+    {
+      "asset_id": "51103007-f201-4ae7-b1bc-5cff88f5eb82",
+      "blob": "79ca87bf-fe64-4f1a-b63b-7853233a20fb",
+      "contentSize": 125596392,
+      "created": "2021-07-02T12:10:29.333178Z",
+      "digest": {
+        "dandi:dandi-etag": "c001dc4f7d1ecb7abcb9113f661777cb-2",
+        "dandi:sha2-256": "cf6ee97c829a95b340e3eda91670511ff4522407a76a472183f7e48ba6068427"
+      },
+      "modified": "2021-08-05T18:46:31.878160Z",
+      "path": "sub-anm226695/sub-anm226695_ses-20140224_obj-1d0uka0_behavior+icephys+ogen.nwb",
+      "size": 125596392,
+      "zarr": null
+    },
+    {
+      "asset_id": "5b2f08ec-4045-49d6-95e8-eef97e0c0509",
+      "blob": "2af9ab73-1e49-4ea2-9481-3f07095f9859",
+      "contentSize": 195248560,
+      "created": "2021-07-02T12:10:30.000892Z",
+      "digest": {
+        "dandi:dandi-etag": "0db7e595b1139cfe2d825f255726e7a2-3",
+        "dandi:sha2-256": "b6b516c331d07746decafdad8e75965916123723a95c20950aa65226531dc370"
+      },
+      "modified": "2021-08-05T18:46:31.911018Z",
+      "path": "sub-anm234230/sub-anm234230_ses-20140119_behavior+icephys+ogen.nwb",
+      "size": 195248560,
+      "zarr": null
+    },
+    {
+      "asset_id": "5cd89b10-acc2-4c8f-b382-05941069d5f5",
+      "blob": "a6242acc-fdfd-4854-b80f-cdcd199c7655",
+      "contentSize": 175337576,
+      "created": "2021-07-02T12:10:30.687322Z",
+      "digest": {
+        "dandi:dandi-etag": "bfbba161f20d04ad969d00a62cf02490-3",
+        "dandi:sha2-256": "a756040b830d1d7ad256a19b6da1594c8f3918c8347bf11f8991641245f60789"
+      },
+      "modified": "2021-08-05T18:46:31.944472Z",
+      "path": "sub-anm215592/sub-anm215592_ses-20131015_obj-8s1awh_behavior+icephys+ogen.nwb",
+      "size": 175337576,
+      "zarr": null
+    },
+    {
+      "asset_id": "b0c21089-2493-4417-895b-55f5a418ff63",
+      "blob": "3cbed1b0-f462-4254-8fbc-f00e82f0dbe0",
+      "contentSize": 205199208,
+      "created": "2021-07-02T12:10:31.357208Z",
+      "digest": {
+        "dandi:dandi-etag": "8b024694cd4e382b371250cc35ea72f5-4",
+        "dandi:sha2-256": "cb718fccdb6760c833aa101a904547e3b718f22ee0adb15ffc6184b784713637"
+      },
+      "modified": "2021-08-05T18:46:31.976491Z",
+      "path": "sub-anm234231/sub-anm234231_ses-20140126_behavior+icephys+ogen.nwb",
+      "size": 205199208,
+      "zarr": null
+    },
+    {
+      "asset_id": "c9d13c69-69d4-4d86-b9cd-95f3cb96552b",
+      "blob": "4a648329-be59-4f0d-95de-cf363e9f77cb",
+      "contentSize": 159417272,
+      "created": "2021-07-02T12:10:32.025260Z",
+      "digest": {
+        "dandi:dandi-etag": "75a00a8f92bd63c1047402bdc91f8a6a-3",
+        "dandi:sha2-256": "b2629b7d6ca414a81efa70226baaf2756ece096bb5c0343633616d14eb79daca"
+      },
+      "modified": "2021-08-05T18:46:32.011050Z",
+      "path": "sub-anm234232/sub-anm234232_ses-20140108_behavior+icephys+ogen.nwb",
+      "size": 159417272,
+      "zarr": null
+    },
+    {
+      "asset_id": "592f856c-3b07-43f2-9702-59dfff12a785",
+      "blob": "3bebb355-d4bf-42e0-909f-7c1d2822bd0a",
+      "contentSize": 95743320,
+      "created": "2021-07-02T12:10:32.736409Z",
+      "digest": {
+        "dandi:dandi-etag": "2e5afd7e52f143da99502fb11569094a-2",
+        "dandi:sha2-256": "f9be18bfc602c0fd1fd97a447fcdfa5b2eedb5f8486347d4156176fb3e81877e"
+      },
+      "modified": "2021-08-05T18:46:32.043409Z",
+      "path": "sub-anm244024/sub-anm244024_ses-20141111_behavior+icephys+ogen.nwb",
+      "size": 95743320,
+      "zarr": null
+    },
+    {
+      "asset_id": "06264dc0-4c43-477d-822f-bd14fb40f3a6",
+      "blob": "489afc13-e50d-49dd-8310-601f4a849029",
+      "contentSize": 51959304,
+      "created": "2021-07-02T12:10:33.419632Z",
+      "digest": {
+        "dandi:dandi-etag": "a3a21b9aaab9de561d72d9685ed36f71-1",
+        "dandi:sha2-256": "1640dd9c8a9cc40937c160d3b5d0264542840d15c5ad53586370f805f01eaed2"
+      },
+      "modified": "2021-08-05T18:46:32.076405Z",
+      "path": "sub-anm244024/sub-anm244024_ses-20141112_obj-1otlhm2_behavior+icephys+ogen.nwb",
+      "size": 51959304,
+      "zarr": null
+    },
+    {
+      "asset_id": "061d6422-018a-4fe0-b914-119b9297be7d",
+      "blob": "68864943-c025-4750-9665-a970ec73f878",
+      "contentSize": 47979264,
+      "created": "2021-07-02T12:10:34.086975Z",
+      "digest": {
+        "dandi:dandi-etag": "a85a03388f5d359a7c93994aadcd3d25-1",
+        "dandi:sha2-256": "6453e4fcd3799f17f0b76fe062c437741295b1b5876fa1b45ccb040e72fc31ca"
+      },
+      "modified": "2021-08-05T18:46:32.113338Z",
+      "path": "sub-anm244024/sub-anm244024_ses-20141112_obj-jyoa6b_behavior+icephys+ogen.nwb",
+      "size": 47979264,
+      "zarr": null
+    },
+    {
+      "asset_id": "f3f945a0-8a3c-4891-b581-9173c74bebe2",
+      "blob": "528bf61a-02b5-4cd5-8675-2360d1a2444a",
+      "contentSize": 109674664,
+      "created": "2021-07-02T12:10:34.735440Z",
+      "digest": {
+        "dandi:dandi-etag": "6403044ee0d976861f31703ab486547b-2",
+        "dandi:sha2-256": "8544e062f31d2d4d8d86bdd0f531d244029181a9e12624834898b4c8646d2314"
+      },
+      "modified": "2021-08-05T18:46:32.147195Z",
+      "path": "sub-anm244025/sub-anm244025_ses-20141026_obj-gspsia_behavior+icephys+ogen.nwb",
+      "size": 109674664,
+      "zarr": null
+    },
+    {
+      "asset_id": "fe2c5532-27a1-41dd-93f6-d25fcead1213",
+      "blob": "87bb826d-64f5-4e56-b35c-f4fc367c3f7e",
+      "contentSize": 95743320,
+      "created": "2021-07-02T12:10:35.452736Z",
+      "digest": {
+        "dandi:dandi-etag": "cdba22fc118dcd47917cf24ab92cb134-2",
+        "dandi:sha2-256": "ea9038c2f172bb653d1bf1adb0d55ef24edbf9463257d0a3411516e8d991fd82"
+      },
+      "modified": "2021-08-05T18:46:32.180808Z",
+      "path": "sub-anm244028/sub-anm244028_ses-20141021_obj-15ygrjz_behavior+icephys+ogen.nwb",
+      "size": 95743320,
+      "zarr": null
+    },
+    {
+      "asset_id": "8f8a3cb3-e350-489d-b13c-bdc47d7072ee",
+      "blob": "ef2cd487-a0b7-462a-ba58-929143a35c6b",
+      "contentSize": 127569024,
+      "created": "2021-07-02T12:10:36.082792Z",
+      "digest": {
+        "dandi:dandi-etag": "02d8e64f1fa153aa442498391f11c28f-2",
+        "dandi:sha2-256": "f85f3debe2d83b2ad402ac15115eaefd8497d09f52508f6af6157f38c387c2cc"
+      },
+      "modified": "2021-08-05T18:46:32.213885Z",
+      "path": "sub-anm244028/sub-anm244028_ses-20141021_obj-1a5sqoc_behavior+icephys+ogen.nwb",
+      "size": 127569024,
+      "zarr": null
+    },
+    {
+      "asset_id": "22c52618-9edb-4698-a033-a8eed2d90d58",
+      "blob": "436191b8-bc4d-4229-8991-b69cefba6a9c",
+      "contentSize": 99724664,
+      "created": "2021-07-02T12:10:36.694896Z",
+      "digest": {
+        "dandi:dandi-etag": "7b0b9f33348cb65b1a858f5f66090b91-2",
+        "dandi:sha2-256": "d45d6f2fe86691a87d9356adf34eb009abb239e81eaff3aab884cd7d949b64a6"
+      },
+      "modified": "2021-08-05T18:46:32.246653Z",
+      "path": "sub-anm244028/sub-anm244028_ses-20141022_behavior+icephys+ogen.nwb",
+      "size": 99724664,
+      "zarr": null
+    },
+    {
+      "asset_id": "3b7fc09d-57d7-46ba-934a-546836ff8af0",
+      "blob": "28846896-d18a-47d8-bb4f-18759c5dcfab",
+      "contentSize": 264906152,
+      "created": "2021-07-02T12:10:37.369334Z",
+      "digest": {
+        "dandi:dandi-etag": "ad77ef123e65e773d84f5f1e9fb8d42e-4",
+        "dandi:sha2-256": "cb78a369d2ceb52b295abd8e5c9cdd4195ec120cf0beafed74028aac56d5204e"
+      },
+      "modified": "2021-08-05T18:46:32.279235Z",
+      "path": "sub-anm244024/sub-anm244024_ses-20141112_obj-8tj80c_behavior+icephys+ogen.nwb",
+      "size": 264906152,
+      "zarr": null
+    },
+    {
+      "asset_id": "89b4aed4-633c-4332-a940-3261533ed56e",
+      "blob": "fbe4db7c-9d50-4a8b-a8e7-8dad629f16be",
+      "contentSize": 173347496,
+      "created": "2021-07-02T12:10:38.086518Z",
+      "digest": {
+        "dandi:dandi-etag": "4357c9efa60d8a4087ff069d89f4a20b-3",
+        "dandi:sha2-256": "88bc0be419a0985379f0b689b1c8cd8c08e9d685180da3450e97a0f2244277f4"
+      },
+      "modified": "2021-08-05T18:46:32.309732Z",
+      "path": "sub-anm244025/sub-anm244025_ses-20141026_obj-1q7bmz0_behavior+icephys+ogen.nwb",
+      "size": 173347496,
+      "zarr": null
+    },
+    {
+      "asset_id": "4c547b06-49a6-45d9-ba43-563d02c75be3",
+      "blob": "21b8fada-1e95-411a-8b5d-cac953e3ad53",
+      "contentSize": 125596392,
+      "created": "2021-07-02T12:10:38.793267Z",
+      "digest": {
+        "dandi:dandi-etag": "bb6fe1530d671287c6ada1d09d0f751f-2",
+        "dandi:sha2-256": "bf6a389b504854377a0fdc8ad8190bc7fed77c5352553bb88082c607eb87afba"
+      },
+      "modified": "2021-08-05T18:46:32.340715Z",
+      "path": "sub-anm266945/sub-anm266945_ses-20141221_behavior+icephys+ogen.nwb",
+      "size": 125596392,
+      "zarr": null
+    },
+    {
+      "asset_id": "1d5b4a88-0702-4066-ae22-c98b51b7cb3a",
+      "blob": "107db118-3a97-466d-9b51-e62efd029d92",
+      "contentSize": 205199208,
+      "created": "2021-07-02T12:10:39.433486Z",
+      "digest": {
+        "dandi:dandi-etag": "fc1e918e0920d625c08c8e8306f6d342-4",
+        "dandi:sha2-256": "d4c10479fe7ba3fd6c50c99a85bfec39944a098f61fdd4116ff78949cbc3fbbb"
+      },
+      "modified": "2021-08-05T18:46:32.373366Z",
+      "path": "sub-anm266945/sub-anm266945_ses-20141222_obj-14qffnp_behavior+icephys+ogen.nwb",
+      "size": 205199208,
+      "zarr": null
+    },
+    {
+      "asset_id": "c7bce7f0-7a54-4006-9935-74491feca9dd",
+      "blob": "a5f53069-94ee-4df1-9527-440d65264da8",
+      "contentSize": 216937600,
+      "created": "2021-07-02T12:10:40.119596Z",
+      "digest": {
+        "dandi:dandi-etag": "25683903167ab4588f40597890d52d17-4",
+        "dandi:sha2-256": "bf776aa6b53dbf4a4b97fda30c0b0fb4da164bd851b4a69caedcbd88ba27f012"
+      },
+      "modified": "2021-08-05T18:46:32.405990Z",
+      "path": "sub-jf35892/sub-jf35892_ses-20100219_behavior+icephys.nwb",
+      "size": 216937600,
+      "zarr": null
+    },
+    {
+      "asset_id": "b8b1b393-e001-452f-b48f-a7b78b09a582",
+      "blob": "4987804b-d230-4880-b5b5-3dc593974539",
+      "contentSize": 59919248,
+      "created": "2021-07-02T12:10:40.748394Z",
+      "digest": {
+        "dandi:dandi-etag": "52624e640f5a3193982f7e7c8b28cbf2-1",
+        "dandi:sha2-256": "e56330845bfba9f3c75ca8306ab18375cc6111e760b2c36f5a9ddd4d535a6074"
+      },
+      "modified": "2021-08-05T18:46:32.441969Z",
+      "path": "sub-anm266945/sub-anm266945_ses-20141222_obj-1574tgg_behavior+icephys+ogen.nwb",
+      "size": 59919248,
+      "zarr": null
+    },
+    {
+      "asset_id": "f132d599-472a-4c34-9bac-0a89e192ae68",
+      "blob": "b847a26b-74bc-413d-a684-81fa8a617857",
+      "contentSize": 67879296,
+      "created": "2021-07-02T12:10:41.417552Z",
+      "digest": {
+        "dandi:dandi-etag": "63dc348ac7b9f1c59ea1d68c3949b578-2",
+        "dandi:sha2-256": "e555965c5f59a87989ca901be5fbe5c0d7340d3c3b74b5b7b97ecadd7013db71"
+      },
+      "modified": "2021-08-05T18:46:32.473717Z",
+      "path": "sub-anm266951/sub-anm266951_ses-20141201_obj-1i6vt6d_behavior+icephys+ogen.nwb",
+      "size": 67879296,
+      "zarr": null
+    },
+    {
+      "asset_id": "a8450991-8806-44a0-bf1f-b9abeb6be44a",
+      "blob": "b741b3b9-f5f4-49e7-ada3-ccafe3dca922",
+      "contentSize": 38019072,
+      "created": "2021-07-02T12:10:42.012399Z",
+      "digest": {
+        "dandi:dandi-etag": "05d632a7b35546e9cbf2eede4aa0728e-1",
+        "dandi:sha2-256": "323dcb6a5375e027dd5d13e05bd62d67782424932d5fd9f7fa9fc4e6895efa4b"
+      },
+      "modified": "2021-08-05T18:46:32.505951Z",
+      "path": "sub-anm266951/sub-anm266951_ses-20141201_obj-10p0o3z_behavior+icephys+ogen.nwb",
+      "size": 38019072,
+      "zarr": null
+    },
+    {
+      "asset_id": "5088ed35-6b80-4309-950e-cd9157a4779f",
+      "blob": "e2d89678-24c3-4a76-b76f-a485527dec2b",
+      "contentSize": 261718344,
+      "created": "2021-07-02T12:10:42.665542Z",
+      "digest": {
+        "dandi:dandi-etag": "3420b4867e73881883a312dd55c8c13e-4",
+        "dandi:sha2-256": "d2cff2488409bee4bdba2d57bb846181d77aba3fee50db3bbbf77cb229f3e19f"
+      },
+      "modified": "2021-08-05T18:46:32.539180Z",
+      "path": "sub-jf35892/sub-jf35892_ses-20100308_behavior+icephys.nwb",
+      "size": 261718344,
+      "zarr": null
+    },
+    {
+      "asset_id": "c87d64d2-cc49-4d09-99f6-2ae3c219ae1c",
+      "blob": "4c14e571-c008-49be-958b-9c988566fdd6",
+      "contentSize": 354855208,
+      "created": "2021-07-02T12:10:43.272099Z",
+      "digest": {
+        "dandi:dandi-etag": "70fdccfc459ecb2e1030fb0d3e15f3c9-6",
+        "dandi:sha2-256": "1ee049e7c9410710f470ea73e26d5062f07561c5f5b089f1b1c85ec9132230a4"
+      },
+      "modified": "2021-08-05T18:46:32.572674Z",
+      "path": "sub-jf35892/sub-jf35892_ses-20100310_behavior+icephys.nwb",
+      "size": 354855208,
+      "zarr": null
+    },
+    {
+      "asset_id": "ca42e06b-7b0e-401f-aea8-252476fd7cf4",
+      "blob": "c22e0556-ac73-4453-a3f9-d6cbd8879ed4",
+      "contentSize": 175731744,
+      "created": "2021-07-02T12:10:43.934460Z",
+      "digest": {
+        "dandi:dandi-etag": "399ef7a98254c8c75971da5b2ee46236-3",
+        "dandi:sha2-256": "aac76dd1c901730af8c945d0cda4031a42b396ce49c56401c79a1b699cfeff9f"
+      },
+      "modified": "2021-08-05T18:46:32.604651Z",
+      "path": "sub-jf35892/sub-jf35892_ses-20100311_behavior+icephys.nwb",
+      "size": 175731744,
+      "zarr": null
+    },
+    {
+      "asset_id": "ab0df25e-3460-46f8-a5b4-315a104986fd",
+      "blob": "d03b3ed6-e5b9-47fd-818f-ec81f27fea22",
+      "contentSize": 165022032,
+      "created": "2021-07-02T12:10:44.611775Z",
+      "digest": {
+        "dandi:dandi-etag": "c90ff9e90e74eeaa899275d68182a5f9-3",
+        "dandi:sha2-256": "107b30bfe7fe7490aa6fabd41b6eac421aac0dd6e79ec0b5766d7f4f654a10a4"
+      },
+      "modified": "2021-08-05T18:46:32.634756Z",
+      "path": "sub-jf42400/sub-jf42400_ses-20100613_behavior+icephys.nwb",
+      "size": 165022032,
+      "zarr": null
+    },
+    {
+      "asset_id": "65005239-e3b4-4e11-9eec-79806e4e1500",
+      "blob": "88a12c89-fe39-4743-86e8-48f2f808de68",
+      "contentSize": 213402834,
+      "created": "2021-07-02T12:10:45.300959Z",
+      "digest": {
+        "dandi:dandi-etag": "3e54cf038176c9cd413d120b1ff854b7-4",
+        "dandi:sha2-256": "27a8363e4c22d6696e2ded82588556456a13a0562917376ed44c493172498afb"
+      },
+      "modified": "2021-08-05T18:46:32.665619Z",
+      "path": "sub-jf42400/sub-jf42400_ses-20100612_behavior+icephys.nwb",
+      "size": 213402834,
+      "zarr": null
+    },
+    {
+      "asset_id": "a5ee876c-0f06-44a3-8d1f-e84f154a42b7",
+      "blob": "ad7f6166-8b7d-4b32-a027-77efa4ca27cb",
+      "contentSize": 166813482,
+      "created": "2021-07-02T12:10:45.938558Z",
+      "digest": {
+        "dandi:dandi-etag": "5f78e5083deeb172bc9222b17d662577-3",
+        "dandi:sha2-256": "c46ee923465494e52037584cfad9b42f5c1298e423f2a3bd99e2e0d491f1063a"
+      },
+      "modified": "2021-08-05T18:46:32.699596Z",
+      "path": "sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb",
+      "size": 166813482,
+      "zarr": null
+    },
+    {
+      "asset_id": "9ee96149-f796-40a3-972e-e9e305ef2c7d",
+      "blob": "aa37724a-c907-4360-abbf-6c094b042720",
+      "contentSize": 168567520,
+      "created": "2021-07-02T12:10:46.640982Z",
+      "digest": {
+        "dandi:dandi-etag": "8025193389139afad0f9da38f8e56511-3",
+        "dandi:sha2-256": "311051460c5bd3d58a3341ccd56ad3aa603b6a276bf1b0308c5e4694c71516ee"
+      },
+      "modified": "2021-08-05T18:46:32.732373Z",
+      "path": "sub-jf37166/sub-jf37166_ses-20100304_behavior+icephys.nwb",
+      "size": 168567520,
+      "zarr": null
+    }
+  ],
+  "version": "0.220126.2143"
+}

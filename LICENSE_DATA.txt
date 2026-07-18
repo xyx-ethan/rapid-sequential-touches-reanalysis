@@ -1,0 +1,9 @@
+The derived tabular data and documentation in this repository are licensed
+under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+License text and terms:
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution must identify Yuxuan Xu, the associated manuscript, and the source
+DANDI dataset (DANDI:000013, version 0.220126.2143; DOI:
+10.48324/dandi.000013/0.220126.2143).
