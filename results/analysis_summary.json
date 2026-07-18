@@ -145,6 +145,24 @@
       "q_sign_primary": 0.5034446716308594
     }
   ],
+  "amplitude_phase_interaction": {
+    "analysis": "continuous_amplitude_by_phase_interaction",
+    "response_window_ms": 50,
+    "minimum_neighbor_ms": 50,
+    "regularization_strength": 1.0,
+    "n_selected_events": 12773,
+    "n_sessions": 35,
+    "n_subjects": 20,
+    "n_modeled_events": 12296,
+    "median_delta_predictive_score": 0.0025200494102341486,
+    "mean_delta_predictive_score": 0.009839701537089542,
+    "n_positive": 14,
+    "n_nonzero": 20,
+    "p_two_sided": 0.029575347900390625,
+    "p_sign_two_sided": 0.11531829833984375,
+    "ci_low": -0.00017424507033744763,
+    "ci_high": 0.015030953691300197
+  },
   "kinematic_results": [
     {
       "feature": "distance_to_pole_at_touch",

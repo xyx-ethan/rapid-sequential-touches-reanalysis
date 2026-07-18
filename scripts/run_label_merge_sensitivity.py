@@ -14,18 +14,24 @@ from scipy.stats import binomtest, wilcoxon
 
 def bh_adjust(values: pd.Series) -> pd.Series:
     array = values.to_numpy(float)
-    order = np.argsort(array)
-    ranked = array[order]
+    output = np.full(array.shape, np.nan)
+    finite = np.isfinite(array)
+    testable = array[finite]
+    if not len(testable):
+        return pd.Series(output, index=values.index)
+    order = np.argsort(testable)
+    ranked = testable[order]
     adjusted = np.minimum.accumulate((ranked * len(ranked) / np.arange(1, len(ranked) + 1))[::-1])[::-1]
-    output = np.empty_like(adjusted)
-    output[order] = np.minimum(adjusted, 1.0)
+    restored = np.empty_like(adjusted)
+    restored[order] = np.minimum(adjusted, 1.0)
+    output[finite] = restored
     return pd.Series(output, index=values.index)
 
 
 def summarize(values: pd.Series) -> dict[str, float | int]:
     values = values.dropna().astype(float)
     nonzero = values[values != 0]
-    if len(nonzero):
+    if len(values) >= 5 and len(nonzero):
         rank_p = float(wilcoxon(nonzero, alternative="two-sided", method="auto").pvalue)
         positives = int((nonzero > 0).sum())
         sign_p = float(binomtest(positives, len(nonzero), 0.5, alternative="two-sided").pvalue)

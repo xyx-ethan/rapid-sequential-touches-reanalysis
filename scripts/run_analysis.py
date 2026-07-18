@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
+from PIL import Image as PILImage
 from scipy import stats
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression, PoissonRegressor
@@ -30,7 +31,24 @@ LIGHT_BLUE = "#8FB3CF"
 OCHRE = "#B07D24"
 GRAY = "#6E7781"
 LIGHT_GRAY = "#D9DEE3"
+PAIR_GRAY = "#78858F"
 BLACK = "#1B1D1F"
+
+plt.rcParams.update(
+    {
+        "font.family": "sans-serif",
+        "font.sans-serif": ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"],
+        "font.size": 8.0,
+        "axes.linewidth": 0.7,
+        "xtick.major.width": 0.7,
+        "ytick.major.width": 0.7,
+        "xtick.major.size": 3.0,
+        "ytick.major.size": 3.0,
+        "pdf.fonttype": 42,
+        "ps.fonttype": 42,
+        "savefig.facecolor": "white",
+    }
+)
 
 
 def json_safe(value):
@@ -121,6 +139,8 @@ def prepare(frame: pd.DataFrame) -> pd.DataFrame:
     data["phase_cos1"] = np.cos(phase)
     data["phase_sin2"] = np.sin(2 * phase)
     data["phase_cos2"] = np.cos(2 * phase)
+    for term in ("phase_sin1", "phase_cos1", "phase_sin2", "phase_cos2"):
+        data[f"{term}_x_log_amplitude"] = data[term] * data["log_amplitude"]
     return data
 
 
@@ -159,6 +179,9 @@ PIECEWISE_PHASE = [
 
 FOURIER_1 = ["phase_sin1", "phase_cos1"]
 FOURIER_2 = ["phase_sin1", "phase_cos1", "phase_sin2", "phase_cos2"]
+AMPLITUDE_PHASE_INTERACTIONS = [
+    f"{term}_x_log_amplitude" for term in FOURIER_2
+]
 
 
 def oof_prediction(
@@ -357,6 +380,38 @@ def run_phase_family(
         "endpoint": endpoint,
         "base_model": base_name,
         "phase_basis": phase_name,
+        "regularization_strength": alpha,
+        "n_selected_events": int(len(selected)),
+    }
+    return sessions, summarize_session_metric(sessions, family)
+
+
+def run_amplitude_phase_interaction(
+    data: pd.DataFrame, alpha: float = 1.0
+) -> tuple[pd.DataFrame, dict[str, object]]:
+    """Test whether the continuous phase profile varies with whisking amplitude."""
+    selected = data[
+        (data["previous_touch_interval_ms"].fillna(np.inf) >= 50)
+        & (data["following_touch_interval_ms"].fillna(np.inf) >= 50)
+    ].copy()
+    base_features = CONTEXT_FEATURES + KINEMATIC_FEATURES + FOURIER_2
+    rows = []
+    for _, session in selected.groupby("path", sort=True):
+        metric = phase_session_metric(
+            session,
+            base_features,
+            AMPLITUDE_PHASE_INTERACTIONS,
+            "spikes_post_50ms",
+            "count",
+            alpha=alpha,
+        )
+        if metric is not None:
+            rows.append(metric)
+    sessions = pd.DataFrame(rows)
+    family = {
+        "analysis": "continuous_amplitude_by_phase_interaction",
+        "response_window_ms": 50,
+        "minimum_neighbor_ms": 50,
         "regularization_strength": alpha,
         "n_selected_events": int(len(selected)),
     }
@@ -919,71 +974,117 @@ def contact_duration_branch_summary(data: pd.DataFrame) -> pd.DataFrame:
 def style_axis(axis: plt.Axes) -> None:
     axis.spines["top"].set_visible(False)
     axis.spines["right"].set_visible(False)
-    axis.tick_params(labelsize=8)
-    axis.grid(axis="y", color=LIGHT_GRAY, linewidth=0.6, alpha=0.75)
-    axis.set_axisbelow(True)
+    axis.tick_params(labelsize=7.6, direction="out")
+
+
+def panel_title(axis: plt.Axes, letter: str, title: str) -> None:
+    axis.set_title(
+        f"{letter}  {title}",
+        loc="left",
+        fontsize=8.8,
+        weight="bold",
+        pad=5,
+    )
+
+
+def save_publication_figure(fig: plt.Figure, output: Path) -> None:
+    fig.savefig(output.with_suffix(".png"), dpi=600, bbox_inches="tight")
+    fig.savefig(
+        output.with_suffix(".tif"),
+        dpi=600,
+        bbox_inches="tight",
+        pil_kwargs={"compression": "tiff_lzw"},
+    )
+    fig.savefig(output.with_suffix(".pdf"), bbox_inches="tight")
+    with PILImage.open(output.with_suffix(".tif")) as image:
+        rgba = image.convert("RGBA")
+        background = PILImage.new("RGBA", rgba.size, "white")
+        background.alpha_composite(rgba)
+        background.convert("RGB").save(
+            output.with_suffix(".tif"),
+            format="TIFF",
+            compression="tiff_lzw",
+            dpi=(600, 600),
+        )
 
 
 def make_figure_1(
-    interval_profile: pd.DataFrame, history: pd.DataFrame, output: Path
+    isolation_profile: pd.DataFrame, history: pd.DataFrame, output: Path
 ) -> None:
-    fig, axes = plt.subplots(1, 3, figsize=(10.8, 3.25), constrained_layout=True)
-    fig.suptitle("Figure 1", x=0.01, ha="left", fontsize=10, weight="bold")
-    x = np.arange(len(ICI_LABELS))
-    for side, color, marker in (
-        ("previous", BLUE, "o"),
-        ("following", OCHRE, "s"),
-    ):
-        part = (
-            interval_profile[interval_profile["side"] == side]
-            .set_index("interval_bin")
-            .reindex(ICI_LABELS)
-        )
-        axes[0].errorbar(
-            x,
-            part["mean_spikes_per_touch"],
-            yerr=[
-                part["mean_spikes_per_touch"] - part["ci_low"],
-                part["ci_high"] - part["mean_spikes_per_touch"],
-            ],
-            color=color,
-            marker=marker,
-            linewidth=1.4,
-            capsize=2,
-            label=f"{side.capitalize()} touch",
-        )
-    axes[0].set_xticks(x, ICI_LABELS, rotation=35, ha="right")
-    axes[0].set_xlabel("Inter-touch interval (ms)", fontsize=9)
-    axes[0].set_ylabel("Spikes in 0-50 ms / touch", fontsize=9)
-    axes[0].legend(frameon=False, fontsize=8)
-    axes[0].set_title("A. Inter-touch interval profile", loc="left", fontsize=10, weight="bold")
+    fig, axes = plt.subplots(1, 3, figsize=(7.15, 2.55), constrained_layout=True)
+    thresholds = isolation_profile[
+        "minimum_interval_to_both_observed_neighbors_ms"
+    ].to_numpy(int)
+    x = np.arange(len(thresholds))
+    axes[0].errorbar(
+        x,
+        isolation_profile["mean_spikes_per_touch"],
+        yerr=[
+            isolation_profile["mean_spikes_per_touch"] - isolation_profile["ci_low"],
+            isolation_profile["ci_high"] - isolation_profile["mean_spikes_per_touch"],
+        ],
+        fmt="o-",
+        color=BLUE,
+        markerfacecolor=BLUE,
+        markersize=4.1,
+        linewidth=1.0,
+        elinewidth=1.0,
+        capsize=2.0,
+        capthick=0.8,
+    )
+    axes[0].set_xticks(x, [str(value) for value in thresholds])
+    axes[0].set_xlabel("Minimum interval to each observed neighbor (ms)", fontsize=8.0)
+    axes[0].set_ylabel("Spikes per touch (0-50 ms)", fontsize=8.0)
+    panel_title(axes[0], "A", "Dense to isolated touches")
     style_axis(axes[0])
 
     baseline = history[
         (history["analysis"] == "baseline_subtracted_rate")
         & history["minimum_previous_interval_ms"].isin([0, 50, 100])
     ]
-    for minimum, color, marker in (
-        (0, OCHRE, "o"),
-        (50, BLUE, "s"),
-        (100, GRAY, "^"),
+    for minimum, color, marker, linestyle, label in (
+        (0, OCHRE, "o", "-", "0 ms"),
+        (50, BLUE, "s", "--", "≥50 ms"),
+        (100, GRAY, "^", ":", "≥100 ms"),
     ):
         part = baseline[baseline["minimum_previous_interval_ms"] == minimum].sort_values(
             "baseline_window_ms"
         )
-        axes[1].plot(
+        axes[1].errorbar(
             part["baseline_window_ms"],
             part["median_beta"],
+            yerr=[
+                part["median_beta"] - part["ci_low"],
+                part["ci_high"] - part["median_beta"],
+            ],
             color=color,
             marker=marker,
-            linewidth=1.4,
-            label=f"Previous interval ≥ {minimum} ms",
+            markerfacecolor="white" if minimum else color,
+            markersize=3.7,
+            linewidth=1.1,
+            linestyle=linestyle,
+            elinewidth=0.7,
+            capsize=1.6,
+            capthick=0.7,
+            label=label,
+        )
+        last = part.iloc[-1]
+        axes[1].annotate(
+            label,
+            (last["baseline_window_ms"], last["median_beta"]),
+            xytext=(4, 0),
+            textcoords="offset points",
+            va="center",
+            ha="left",
+            fontsize=6.8,
+            color=BLACK,
         )
     axes[1].axhline(0, color=BLACK, linewidth=0.8)
-    axes[1].set_xlabel("Baseline window (ms)", fontsize=9)
-    axes[1].set_ylabel("Median standardized interval coefficient", fontsize=9)
-    axes[1].legend(frameon=False, fontsize=7.4)
-    axes[1].set_title("B. Baseline subtraction", loc="left", fontsize=10, weight="bold")
+    axes[1].set_xticks([10, 20, 30, 40, 50])
+    axes[1].set_xlim(8, 63)
+    axes[1].set_xlabel("Baseline window (ms)", fontsize=8.0)
+    axes[1].set_ylabel("Median standardized coefficient", fontsize=8.0)
+    panel_title(axes[1], "B", "Estimate by preceding interval")
     style_axis(axes[1])
 
     post = history[
@@ -997,34 +1098,36 @@ def make_figure_1(
             post["median_beta"] - post["ci_low"],
             post["ci_high"] - post["median_beta"],
         ],
+        fmt="o",
         color=BLUE,
-        marker="o",
-        linewidth=1.4,
-        capsize=2,
+        markerfacecolor=BLUE,
+        markersize=4.0,
+        elinewidth=1.0,
+        capsize=2.0,
+        capthick=0.8,
+        linestyle="none",
     )
     axes[2].axhline(0, color=BLACK, linewidth=0.8)
-    axes[2].set_xlabel("Post-touch response window (ms)", fontsize=9)
-    axes[2].set_ylabel("Median standardized interval coefficient", fontsize=9)
-    axes[2].set_title("C. Post-touch counts", loc="left", fontsize=10, weight="bold")
+    axes[2].set_xticks([10, 20, 30, 40, 50])
+    axes[2].set_xlabel("Response window (ms)", fontsize=8.0)
+    axes[2].set_ylabel("Median standardized coefficient", fontsize=8.0)
+    panel_title(axes[2], "C", "Preceding-interval coefficient")
     style_axis(axes[2])
-    fig.savefig(output.with_suffix(".png"), dpi=400, bbox_inches="tight")
-    fig.savefig(output.with_suffix(".tif"), dpi=400, bbox_inches="tight")
+    fig.text(0.995, 0.004, "Fig. 1", ha="right", va="bottom", fontsize=6.5, color=BLACK)
+    save_publication_figure(fig, output)
     plt.close(fig)
 
 
 def make_figure_2(
     profile: pd.DataFrame,
-    phase_subjects: pd.DataFrame,
     phase_summary: pd.DataFrame,
     output: Path,
 ) -> None:
-    fig = plt.figure(figsize=(10.8, 6.4), constrained_layout=True)
-    fig.suptitle("Figure 2", x=0.01, ha="left", fontsize=10, weight="bold")
-    grid = fig.add_gridspec(2, 2)
+    fig = plt.figure(figsize=(7.15, 2.75), constrained_layout=True)
+    grid = fig.add_gridspec(1, 3, width_ratios=(0.85, 1.15, 1.0))
     polar = fig.add_subplot(grid[0, 0], projection="polar")
     adjusted = fig.add_subplot(grid[0, 1])
-    paired = fig.add_subplot(grid[1, 0])
-    windows = fig.add_subplot(grid[1, 1])
+    windows = fig.add_subplot(grid[0, 2])
 
     theta = profile["phase_center"].to_numpy(float)
     radius = profile["raw_spikes_per_touch"].to_numpy(float)
@@ -1037,23 +1140,35 @@ def make_figure_2(
         np.r_[low, low[0]],
         np.r_[high, high[0]],
         color=LIGHT_BLUE,
-        alpha=0.35,
+        alpha=0.50,
         linewidth=0,
     )
+    polar.plot(theta_closed, np.r_[low, low[0]], color=BLUE, alpha=0.35, linewidth=0.5)
+    polar.plot(theta_closed, np.r_[high, high[0]], color=BLUE, alpha=0.35, linewidth=0.5)
     polar.scatter(theta, radius, color=BLUE, s=17, zorder=3)
     polar.set_theta_zero_location("E")
     polar.set_theta_direction(1)
-    polar.set_thetamin(-180)
-    polar.set_thetamax(180)
     polar.set_thetagrids(
-        np.degrees([-np.pi, -np.pi / 2, 0, np.pi / 2]),
-        labels=["−π", "−π/2", "0", "π/2"],
-        fontsize=8,
+        [0, 90, 180, 270],
+        labels=["0", "π/2", "±π", "−π/2"],
+        fontsize=7.4,
     )
-    polar.set_rlim(0, max(0.7, float(np.nanmax(high)) * 1.05))
-    polar.set_rgrids([0.2, 0.4, 0.6], angle=135, fontsize=7)
-    polar.grid(color=LIGHT_GRAY, linewidth=0.6)
-    polar.set_title("A. Twelve radial phase bins", loc="left", fontsize=10, weight="bold", pad=14)
+    upper = max(0.7, float(np.nanmax(high)) * 1.05)
+    polar.set_rlim(0, upper)
+    polar.set_rgrids([0.2, 0.4, 0.6], angle=135, fontsize=6.8)
+    polar.grid(color=LIGHT_GRAY, linewidth=0.5)
+    polar.spines["polar"].set_linewidth(0.7)
+    polar.text(
+        0.5,
+        -0.19,
+        "Events: 9,742 protraction; 2,554 retraction",
+        transform=polar.transAxes,
+        ha="center",
+        va="top",
+        fontsize=6.6,
+        color=BLACK,
+    )
+    panel_title(polar, "A", "Raw spikes per touch (0-50 ms)")
 
     for measure, color, marker, linestyle, label in (
         ("context_residual", OCHRE, "o", "--", "Context-adjusted"),
@@ -1068,65 +1183,35 @@ def make_figure_2(
             ],
             color=color,
             marker=marker,
+            markerfacecolor="white" if measure == "kinematic_residual" else color,
+            markersize=3.5,
             linestyle=linestyle,
-            linewidth=1.3,
-            capsize=2,
+            linewidth=1.0,
+            elinewidth=0.8,
+            capsize=1.6,
             label=label,
         )
     adjusted.axhline(0, color=BLACK, linewidth=0.8)
-    adjusted.axvline(0, color=LIGHT_GRAY, linewidth=0.8)
+    adjusted.axvline(0, color=LIGHT_GRAY, linewidth=0.6)
     adjusted.set_xticks(
         [-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi],
         ["−π", "−π/2", "0", "π/2", "π"],
     )
-    adjusted.set_xlabel("Whisking phase", fontsize=9)
-    adjusted.set_ylabel("Standardized held-out residual", fontsize=9)
-    adjusted.legend(frameon=False, fontsize=8)
-    adjusted.set_title("B. Adjustment changes the profile", loc="left", fontsize=10, weight="bold")
+    adjusted.set_xlabel("Whisking phase", fontsize=8.0)
+    adjusted.set_ylabel("Standardized held-out residual", fontsize=8.0)
+    adjusted.legend(
+        frameon=True,
+        facecolor="white",
+        edgecolor="none",
+        framealpha=0.94,
+        fontsize=7.0,
+        handlelength=2.0,
+        handletextpad=0.5,
+        borderaxespad=0.2,
+        loc="upper left",
+    )
+    panel_title(adjusted, "B", "Held-out residual profiles")
     style_axis(adjusted)
-
-    primary = phase_subjects[
-        (phase_subjects["response_window_ms"] == 50)
-        & (phase_subjects["minimum_neighbor_ms"] == 50)
-        & (phase_subjects["endpoint"] == "count")
-        & (phase_subjects["phase_basis"] == "two_harmonics")
-        & (phase_subjects["regularization_strength"] == 1.0)
-    ]
-    primary_by_subject = (
-        primary.groupby(["subject", "base_model"], as_index=False)[
-            "delta_predictive_score"
-        ]
-        .median()
-    )
-    pivot = primary_by_subject.pivot(
-        index="subject", columns="base_model", values="delta_predictive_score"
-    ).dropna()
-    for _, row in pivot.iterrows():
-        paired.plot(
-            [0, 1],
-            [row["context"], row["continuous_kinematics"]],
-            color=LIGHT_GRAY,
-            linewidth=0.8,
-            zorder=1,
-        )
-    paired.scatter(np.zeros(len(pivot)), pivot["context"], color=OCHRE, s=24, zorder=2)
-    paired.scatter(
-        np.ones(len(pivot)), pivot["continuous_kinematics"], color=BLUE, s=24, zorder=2
-    )
-    paired.scatter(
-        [0, 1],
-        [pivot["context"].median(), pivot["continuous_kinematics"].median()],
-        color=BLACK,
-        marker="_",
-        s=180,
-        linewidth=2,
-        zorder=3,
-    )
-    paired.axhline(0, color=BLACK, linewidth=0.8)
-    paired.set_xticks([0, 1], ["Context", "Measured\nkinematics"])
-    paired.set_ylabel("Change in held-out predictive score", fontsize=9)
-    paired.set_title("C. Phase contribution by archive label", loc="left", fontsize=10, weight="bold")
-    style_axis(paired)
 
     selected = phase_summary[
         (phase_summary["minimum_neighbor_ms"] == 50)
@@ -1134,27 +1219,44 @@ def make_figure_2(
         & (phase_summary["phase_basis"] == "two_harmonics")
         & (phase_summary["regularization_strength"] == 1.0)
     ]
-    for model, color, marker, label in (
-        ("context", OCHRE, "o", "Context"),
-        ("continuous_kinematics", BLUE, "s", "Measured kinematics"),
+    for model, color, marker, linestyle, label in (
+        ("context", OCHRE, "o", "-", "Context"),
+        ("continuous_kinematics", BLUE, "s", "--", "Measured kinematics"),
     ):
         part = selected[selected["base_model"] == model].sort_values("response_window_ms")
-        windows.plot(
+        windows.errorbar(
             part["response_window_ms"],
             part["median_delta_predictive_score"],
+            yerr=[
+                part["median_delta_predictive_score"] - part["ci_low"],
+                part["ci_high"] - part["median_delta_predictive_score"],
+            ],
             color=color,
             marker=marker,
-            linewidth=1.4,
+            markerfacecolor="white" if model == "continuous_kinematics" else color,
+            markersize=3.8,
+            linewidth=1.1,
+            elinewidth=0.8,
+            capsize=1.8,
+            linestyle=linestyle,
             label=label,
         )
     windows.axhline(0, color=BLACK, linewidth=0.8)
-    windows.set_xlabel("Post-touch response window (ms)", fontsize=9)
-    windows.set_ylabel("Median change in held-out predictive score", fontsize=9)
-    windows.legend(frameon=False, fontsize=8)
-    windows.set_title("D. Response-window sensitivity", loc="left", fontsize=10, weight="bold")
+    windows.set_xticks([10, 20, 30, 40, 50])
+    windows.set_xlabel("Response window (ms)", fontsize=8.0)
+    windows.set_ylabel("Median held-out score gain", fontsize=8.0)
+    windows.legend(
+        frameon=False,
+        fontsize=7.0,
+        handlelength=2.0,
+        handletextpad=0.5,
+        borderaxespad=0.2,
+        loc="upper left",
+    )
+    panel_title(windows, "C", "Response-window sensitivity")
     style_axis(windows)
-    fig.savefig(output.with_suffix(".png"), dpi=400, bbox_inches="tight")
-    fig.savefig(output.with_suffix(".tif"), dpi=400, bbox_inches="tight")
+    fig.text(0.995, 0.004, "Fig. 2", ha="right", va="bottom", fontsize=6.5, color=BLACK)
+    save_publication_figure(fig, output)
     plt.close(fig)
 
 
@@ -1320,6 +1422,16 @@ def main() -> None:
     phase_session_frame.to_csv(results / "phase_session_metrics.csv", index=False)
     phase_summary_frame.to_csv(results / "phase_subject_summary.csv", index=False)
 
+    amplitude_phase_sessions, amplitude_phase_summary = run_amplitude_phase_interaction(
+        data, alpha=1.0
+    )
+    amplitude_phase_sessions.assign(**amplitude_phase_summary).to_csv(
+        results / "amplitude_phase_interaction_session_metrics.csv", index=False
+    )
+    pd.DataFrame([amplitude_phase_summary]).to_csv(
+        results / "amplitude_phase_interaction_subject_summary.csv", index=False
+    )
+
     observed_neighbor_data = data[
         data["previous_touch_interval_ms"].notna()
         & data["following_touch_interval_ms"].notna()
@@ -1376,10 +1488,13 @@ def main() -> None:
     duration_summary = contact_duration_branch_summary(data)
     duration_summary.to_csv(results / "contact_duration_branch_summary.csv", index=False)
 
-    make_figure_1(intervals, history_summary, figures / "Figure_1_intertouch_and_windows")
+    make_figure_1(
+        observed_bilateral,
+        history_summary,
+        figures / "Figure_1_intertouch_and_windows",
+    )
     make_figure_2(
         profile_summary,
-        phase_session_frame,
         phase_summary_frame,
         figures / "Figure_2_phase_and_continuous_adjustment",
     )
@@ -1411,6 +1526,7 @@ def main() -> None:
         "phase_retraction_events": int((data["phase_raw"] >= 0).sum()),
         "main_history_results": main_history.to_dict(orient="records"),
         "main_phase_results": main_phase.to_dict(orient="records"),
+        "amplitude_phase_interaction": amplitude_phase_summary,
         "kinematic_results": kinematic_summary.to_dict(orient="records"),
         "phase_branch_results": branch_summary.to_dict(orient="records"),
         "phase_subregion_results": subregion_summary.to_dict(orient="records"),

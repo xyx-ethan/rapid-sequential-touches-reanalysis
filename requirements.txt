@@ -2,6 +2,7 @@ h5py==3.15.1
 matplotlib==3.10.7
 numpy==2.3.5
 pandas==2.3.3
-requests==2.32.5
+Pillow==12.1.1
 scikit-learn==1.7.2
 scipy==1.16.3
+# Tested with Python 3.14.4.

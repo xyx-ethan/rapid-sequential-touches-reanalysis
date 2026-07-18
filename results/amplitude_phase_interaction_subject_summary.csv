@@ -1,0 +1,2 @@
+analysis,response_window_ms,minimum_neighbor_ms,regularization_strength,n_selected_events,n_sessions,n_subjects,n_modeled_events,median_delta_predictive_score,mean_delta_predictive_score,n_positive,n_nonzero,p_two_sided,p_sign_two_sided,ci_low,ci_high
+continuous_amplitude_by_phase_interaction,50,50,1.0,12773,35,20,12296,0.0025200494102341486,0.009839701537089542,14,20,0.029575347900390625,0.11531829833984375,-0.00017424507033744763,0.015030953691300197
