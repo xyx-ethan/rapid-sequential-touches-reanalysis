@@ -63,6 +63,8 @@ def phase_results(results: Path, pairs: list[tuple[str, str]]) -> pd.DataFrame:
         & (data["minimum_neighbor_ms"] == 50)
         & (data["phase_basis"] == "two_harmonics")
         & (data["regularization_strength"] == 1.0)
+        & (data["endpoint"].isin(["count", "any_spike"]))
+        & (data["base_model"].isin(["context", "continuous_kinematics"]))
     ]
     keys = ["endpoint", "base_model"]
     rows = []

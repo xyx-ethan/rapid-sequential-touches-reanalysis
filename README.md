@@ -2,7 +2,7 @@
 
 These materials reproduce the analyses for "Rapid sequential touches complicate whisking-phase analysis in mouse active touch."
 
-Archive version: 1.0.2 (July 18, 2026).
+Archive version: 1.0.3 (July 18, 2026).
 
 ## Contents
 
@@ -59,7 +59,7 @@ Then run the analysis on `data/touch_events_reconstructed.csv`. The extraction c
 
 The manuscript analysis retains layer 4 touches during the first 2 s after pole entry, excludes optogenetic-stimulation trials and missing phase, and uses archive subject labels for final aggregation. Cross-validation holds out complete trials. The reference phase threshold treats a missing neighbor at a trial boundary as the absence of a recorded close onset; a stricter sensitivity requires observed within-trial neighbors on both sides. Phase is represented with first- and second-harmonic sine/cosine terms in the reference model. Exact sign tests complement signed-rank tests for the reference phase comparisons, and penalty sensitivity covers 0.01, 0.1, 1, and 10. A continuous amplitude-by-phase analysis adds interactions between log amplitude and all four phase terms. Peak post-contact curvature and touch duration are analyzed in a separate coefficient model and are excluded from the pre-touch predictive adjustment because they occur during the response interval. A descriptive sensitivity adds these post-onset measures to the predictive adjustment. Additional outputs report direct phase-branch contrasts and C2 and surrounding-barrel summaries.
 
-Because the archive does not provide a crosswalk between subject labels and biological animals, the label-level tests describe consistency across archive grouping keys. Wilcoxon and sign tests are reported only when at least five grouping labels contribute finite values; false-discovery-rate adjustments omit rows without a testable P value. The pair-merge sensitivity can be reproduced with:
+Because the archive does not provide a crosswalk between subject labels and biological animals, the label-level tests describe consistency across archive grouping keys. Wilcoxon and sign tests are reported only when at least five grouping labels contribute finite values; false-discovery-rate adjustments omit rows without a testable P value. For each possible label merge, the reference phase family contains the same four comparisons as the main analysis: count and any-spike outcomes, each with contextual and measured-movement adjustment. The pair-merge sensitivity can be reproduced with:
 
 ```bash
 python3 scripts/run_label_merge_sensitivity.py results
