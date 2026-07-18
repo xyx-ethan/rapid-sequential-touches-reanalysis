@@ -9,6 +9,7 @@ These materials reproduce the analyses for "Rapid sequential touches complicate 
 - `scripts/download_data.py`: optional downloader and checksum verifier for the 52 source NWB files.
 - `scripts/extract_features.py`: reconstructs event variables from the NWB files and validates spike counts.
 - `scripts/run_analysis.py`: applies the layer 4 eligibility criteria, runs all models and sensitivity analyses, and generates source-data files and figures.
+- `scripts/run_label_merge_sensitivity.py`: merges every possible pair of archive subject labels and recomputes the label-level history and phase summaries.
 - `validation/extraction_validation.json`: file-level extraction and checksum report.
 - `results/`: numerical outputs reported in the manuscript and supporting information, including observed-neighbor isolation, crossed baseline/response-window estimates, phase-branch contrasts, recording-location summaries, contact-duration summaries, and label-level coefficient files.
 - `figures/`: the two manuscript figures in PNG format.
@@ -47,6 +48,12 @@ Then run the analysis on `data/touch_events_reconstructed.csv`. The extraction c
 ## Analysis conventions
 
 The manuscript analysis retains layer 4 touches during the first 2 s after pole entry, excludes optogenetic-stimulation trials and missing phase, and uses archive subject labels for final aggregation. Cross-validation holds out complete trials. Phase is represented with first- and second-harmonic sine/cosine terms in the primary model. Exact sign tests complement signed-rank tests for the primary phase comparisons, and penalty sensitivity covers 0.01, 0.1, 1, and 10. Peak post-contact curvature and touch duration are analyzed in a separate coefficient model and are excluded from the pre-touch predictive adjustment because they occur during the response interval. A descriptive sensitivity adds these post-onset measures to the predictive adjustment. Additional outputs report direct phase-branch contrasts, C2 and surrounding-barrel summaries, and a stricter condition requiring observed within-trial neighbors on both sides.
+
+Because the archive does not provide a crosswalk between subject labels and biological animals, the label-level tests describe consistency across archive grouping keys. The pair-merge sensitivity can be reproduced with:
+
+```bash
+python3 scripts/run_label_merge_sensitivity.py results
+```
 
 ## Terms of use
 

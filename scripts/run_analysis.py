@@ -1419,7 +1419,7 @@ def main() -> None:
         "notes": [
             "All spike windows are half-open intervals re-extracted from the 10 kHz NWB spike train.",
             "Phase models use grouped trial cross-validation and archive subject IDs as the final aggregation level.",
-            "Hit, miss, and false-alarm labels are excluded from all models.",
+            "Behavioral outcome labels such as hit, miss, and false alarm are not used as model predictors.",
         ],
     }
     summary = json_safe(summary)
