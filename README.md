@@ -12,6 +12,7 @@ These materials reproduce the analyses for "Rapid sequential touches complicate 
 - `validation/extraction_validation.json`: file-level extraction and checksum report.
 - `results/`: numerical outputs reported in the manuscript and supporting information, including observed-neighbor isolation, crossed baseline/response-window estimates, phase-branch contrasts, recording-location summaries, contact-duration summaries, and label-level coefficient files.
 - `figures/`: the two manuscript figures in PNG format.
+- `Supporting_Information.pdf`: fixed-layout supplemental tables and sensitivity results.
 - `requirements.txt`: tested Python package versions.
 - `checksums.sha256`: SHA-256 checksums for every archived file except the checksum file itself.
 
