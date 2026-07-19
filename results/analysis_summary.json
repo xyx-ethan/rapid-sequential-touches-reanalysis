@@ -387,7 +387,7 @@
   ],
   "notes": [
     "All spike windows are half-open intervals re-extracted from the 10 kHz NWB spike train.",
-    "Phase models use grouped trial cross-validation and archive subject IDs as the final aggregation level.",
+    "Phase models use grouped trial cross-validation and archive subject labels as the final aggregation level.",
     "Behavioral outcome labels such as hit, miss, and false alarm are not used as model predictors."
   ]
 }
