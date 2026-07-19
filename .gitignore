@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 raw_nwb/
 reproduced/
+figures/Figure_1_intertouch_and_windows.*
+figures/Figure_2_phase_and_continuous_adjustment.*
+figures/Figure_3_continuous_kinematics.*

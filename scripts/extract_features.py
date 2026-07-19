@@ -153,9 +153,7 @@ def touch_durations(
     if np.max(np.abs(onset_times[event_index] - events)) > 0.00051:
         raise RuntimeError("touch table and NWB touch-onset times do not align")
 
-    durations = (offset_times[event_index] - onset_times[event_index]) * 1000.0
-    durations[(durations < 0) | (durations > 1000)] = np.nan
-    return durations
+    return (offset_times[event_index] - onset_times[event_index]) * 1000.0
 
 
 def extract_session(raw_path: Path, frame: pd.DataFrame) -> tuple[pd.DataFrame, dict]:

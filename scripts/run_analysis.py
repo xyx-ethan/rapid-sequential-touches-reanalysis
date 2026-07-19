@@ -199,13 +199,18 @@ def oof_prediction(
     null_prediction = np.full(len(frame), np.nan)
     splits = min(5, len(unique_groups))
     for train, test in GroupKFold(n_splits=splits).split(frame, groups=groups):
+        training_target = frame.iloc[train][target]
+        if endpoint == "count" and float(training_target.sum()) <= 0:
+            return None
+        if endpoint != "count" and training_target.nunique() < 2:
+            return None
         estimator = (
             PoissonRegressor(alpha=alpha, max_iter=1000)
             if endpoint == "count"
             else LogisticRegression(C=1.0 / alpha, max_iter=1000)
         )
         model = make_pipeline(SimpleImputer(strategy="median"), StandardScaler(), estimator)
-        model.fit(frame.iloc[train][features], frame.iloc[train][target])
+        model.fit(frame.iloc[train][features], training_target)
         if endpoint == "count":
             prediction[test] = np.clip(model.predict(frame.iloc[test][features]), 1e-9, None)
             null_prediction[test] = max(float(frame.iloc[train][target].mean()), 1e-9)
@@ -1492,12 +1497,12 @@ def main() -> None:
     make_figure_1(
         observed_bilateral,
         history_summary,
-        figures / "Figure_1_intertouch_and_windows",
+        figures / "Figure_1",
     )
     make_figure_2(
         profile_summary,
         phase_summary_frame,
-        figures / "Figure_2_phase_and_continuous_adjustment",
+        figures / "Figure_2",
     )
     make_figure_3(
         kinematic_sessions,
