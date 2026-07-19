@@ -1083,8 +1083,8 @@ def make_figure_1(
     axes[1].set_xticks([10, 20, 30, 40, 50])
     axes[1].set_xlim(8, 63)
     axes[1].set_xlabel("Baseline window (ms)", fontsize=8.0)
-    axes[1].set_ylabel("Median standardized coefficient", fontsize=8.0)
-    panel_title(axes[1], "B", "Estimate by preceding interval")
+    axes[1].set_ylabel("Standardized interval coefficient", fontsize=8.0)
+    panel_title(axes[1], "B", "Baseline-subtracted rate")
     style_axis(axes[1])
 
     post = history[
@@ -1110,8 +1110,8 @@ def make_figure_1(
     axes[2].axhline(0, color=BLACK, linewidth=0.8)
     axes[2].set_xticks([10, 20, 30, 40, 50])
     axes[2].set_xlabel("Response window (ms)", fontsize=8.0)
-    axes[2].set_ylabel("Median standardized coefficient", fontsize=8.0)
-    panel_title(axes[2], "C", "Preceding-interval coefficient")
+    axes[2].set_ylabel("Standardized interval coefficient", fontsize=8.0)
+    panel_title(axes[2], "C", "Post-touch count")
     style_axis(axes[2])
     fig.text(0.995, 0.004, "Fig. 1", ha="right", va="bottom", fontsize=6.5, color=BLACK)
     save_publication_figure(fig, output)
@@ -1161,18 +1161,19 @@ def make_figure_2(
     polar.text(
         0.5,
         -0.19,
+        "Negative phase: protraction; nonnegative: retraction\n"
         "Events: 9,742 protraction; 2,554 retraction",
         transform=polar.transAxes,
         ha="center",
         va="top",
-        fontsize=6.6,
+        fontsize=6.2,
         color=BLACK,
     )
     panel_title(polar, "A", "Raw spikes per touch (0-50 ms)")
 
     for measure, color, marker, linestyle, label in (
-        ("context_residual", OCHRE, "o", "--", "Context-adjusted"),
-        ("kinematic_residual", BLUE, "s", "-", "Adjusted for measured kinematics"),
+        ("context_residual", OCHRE, "o", "--", "Timing and task"),
+        ("kinematic_residual", BLUE, "s", "-", "After measured movement"),
     ):
         adjusted.errorbar(
             theta,
@@ -1198,7 +1199,7 @@ def make_figure_2(
         ["−π", "−π/2", "0", "π/2", "π"],
     )
     adjusted.set_xlabel("Whisking phase", fontsize=8.0)
-    adjusted.set_ylabel("Standardized held-out residual", fontsize=8.0)
+    adjusted.set_ylabel("Prediction error in held-out trials", fontsize=8.0)
     adjusted.legend(
         frameon=True,
         facecolor="white",
@@ -1210,7 +1211,7 @@ def make_figure_2(
         borderaxespad=0.2,
         loc="upper left",
     )
-    panel_title(adjusted, "B", "Held-out residual profiles")
+    panel_title(adjusted, "B", "Residuals by whisking phase")
     style_axis(adjusted)
 
     selected = phase_summary[
@@ -1220,8 +1221,8 @@ def make_figure_2(
         & (phase_summary["regularization_strength"] == 1.0)
     ]
     for model, color, marker, linestyle, label in (
-        ("context", OCHRE, "o", "-", "Context"),
-        ("continuous_kinematics", BLUE, "s", "--", "Measured kinematics"),
+        ("context", OCHRE, "o", "-", "Timing and task"),
+        ("continuous_kinematics", BLUE, "s", "--", "After measured movement"),
     ):
         part = selected[selected["base_model"] == model].sort_values("response_window_ms")
         windows.errorbar(
@@ -1244,7 +1245,7 @@ def make_figure_2(
     windows.axhline(0, color=BLACK, linewidth=0.8)
     windows.set_xticks([10, 20, 30, 40, 50])
     windows.set_xlabel("Response window (ms)", fontsize=8.0)
-    windows.set_ylabel("Median held-out score gain", fontsize=8.0)
+    windows.set_ylabel("Improvement in held-out prediction", fontsize=8.0)
     windows.legend(
         frameon=False,
         fontsize=7.0,
@@ -1253,7 +1254,7 @@ def make_figure_2(
         borderaxespad=0.2,
         loc="upper left",
     )
-    panel_title(windows, "C", "Response-window sensitivity")
+    panel_title(windows, "C", "Prediction across response windows")
     style_axis(windows)
     fig.text(0.995, 0.004, "Fig. 2", ha="right", va="bottom", fontsize=6.5, color=BLACK)
     save_publication_figure(fig, output)

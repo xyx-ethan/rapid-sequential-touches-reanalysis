@@ -5,6 +5,8 @@ Derived tabular data and documentation are provided under the Creative Commons A
 
 Users of the derived data must cite both the manuscript associated with this repository and the source dataset:
 
-Hires S, Gutnisky D, Yu J, O'Connor DH, Svoboda K. Low-noise encoding of active touch by layer 4 in the mouse somatosensory cortex. DANDI Archive, version 0.220126.2143. https://doi.org/10.48324/dandi.000013/0.220126.2143
+Xu Y. Rapid sequential touches complicate whisking-phase analysis in mouse active touch. Reproduction materials, version 1.0.4. https://doi.org/10.5281/zenodo.21438519
+
+Hires S, Gutnisky D, Yu J, O'Connor DH, Svoboda K. Low-noise encoding of active touch by layer 4 in the somatosensory cortex. DANDI Archive, version 0.220126.2143. https://doi.org/10.48324/dandi.000013/0.220126.2143
 
 The materials are provided without warranty. Users are responsible for verifying that their use complies with applicable institutional, legal, ethical, and source-data requirements.

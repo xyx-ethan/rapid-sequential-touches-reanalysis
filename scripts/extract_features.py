@@ -142,15 +142,18 @@ def window_peak(
 def touch_durations(
     onset_times: np.ndarray, offset_times: np.ndarray, events: np.ndarray
 ) -> np.ndarray:
+    if len(onset_times) != len(offset_times):
+        raise RuntimeError("touch-onset and touch-offset marker counts differ")
+    if np.any(offset_times < onset_times):
+        raise RuntimeError("a touch offset precedes its paired onset")
+    if len(onset_times) > 1 and np.any(offset_times[:-1] > onset_times[1:]):
+        raise RuntimeError("paired touch markers cross the following onset")
+
     event_index = nearest_indices(onset_times, events)
     if np.max(np.abs(onset_times[event_index] - events)) > 0.00051:
         raise RuntimeError("touch table and NWB touch-onset times do not align")
-    candidates = np.searchsorted(offset_times, onset_times[event_index], side="right")
-    durations = np.full(len(events), np.nan)
-    valid = candidates < len(offset_times)
-    durations[valid] = (
-        offset_times[candidates[valid]] - onset_times[event_index[valid]]
-    ) * 1000.0
+
+    durations = (offset_times[event_index] - onset_times[event_index]) * 1000.0
     durations[(durations < 0) | (durations > 1000)] = np.nan
     return durations
 
