@@ -2,9 +2,9 @@
 
 These materials reproduce the analyses for "Rapid sequential touches complicate whisking-phase analysis in mouse active touch."
 
-Archive version: 1.0.6 (July 21, 2026).
+Archive version: 1.0.7 (July 21, 2026).
 
-Author: Yuxuan Xu. Repository: https://github.com/xyx-ethan/rapid-sequential-touches-reanalysis. The archived release is https://doi.org/10.5281/zenodo.21481856; the all-version record is https://doi.org/10.5281/zenodo.21422472.
+Author: Yuxuan Xu. Repository: https://github.com/xyx-ethan/rapid-sequential-touches-reanalysis. The archived release is https://doi.org/10.5281/zenodo.21482096; the all-version record is https://doi.org/10.5281/zenodo.21422472.
 
 ## Contents
 
