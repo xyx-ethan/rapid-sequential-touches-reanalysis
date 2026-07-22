@@ -1045,48 +1045,48 @@ def make_figure_1(
 
     baseline = history[
         (history["analysis"] == "baseline_subtracted_rate")
-        & history["minimum_previous_interval_ms"].isin([0, 50, 100])
+        & history["minimum_previous_interval_ms"].isin([0, 100])
     ]
     for minimum, color, marker, linestyle, label in (
-        (0, OCHRE, "o", "-", "0 ms"),
-        (50, BLUE, "s", "--", "≥50 ms"),
-        (100, GRAY, "^", ":", "≥100 ms"),
+        (0, BLACK, "o", "-", "No limit"),
+        (100, BLUE, "^", "--", "≥100 ms"),
     ):
         part = baseline[baseline["minimum_previous_interval_ms"] == minimum].sort_values(
             "baseline_window_ms"
         )
-        axes[1].errorbar(
+        axes[1].fill_between(
+            part["baseline_window_ms"],
+            part["ci_low"],
+            part["ci_high"],
+            color=color,
+            alpha=0.11,
+            linewidth=0,
+        )
+        axes[1].plot(
             part["baseline_window_ms"],
             part["median_beta"],
-            yerr=[
-                part["median_beta"] - part["ci_low"],
-                part["ci_high"] - part["median_beta"],
-            ],
             color=color,
             marker=marker,
             markerfacecolor="white" if minimum else color,
+            markeredgecolor=color,
             markersize=3.7,
             linewidth=1.1,
             linestyle=linestyle,
-            elinewidth=0.7,
-            capsize=1.6,
-            capthick=0.7,
-            label=label,
         )
         last = part.iloc[-1]
         axes[1].annotate(
             label,
             (last["baseline_window_ms"], last["median_beta"]),
-            xytext=(4, 0),
+            xytext=(-4, 9 if minimum == 0 else -6),
             textcoords="offset points",
             va="center",
-            ha="left",
+            ha="right",
             fontsize=6.8,
-            color=BLACK,
+            color=color,
         )
     axes[1].axhline(0, color=BLACK, linewidth=0.8)
     axes[1].set_xticks([10, 20, 30, 40, 50])
-    axes[1].set_xlim(8, 63)
+    axes[1].set_xlim(8, 52)
     axes[1].set_xlabel("Baseline window (ms)", fontsize=8.0)
     axes[1].set_ylabel("Standardized interval coefficient", fontsize=8.0)
     panel_title(axes[1], "B", "Baseline-subtracted rate")
